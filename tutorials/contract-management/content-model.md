@@ -12,7 +12,7 @@ At the end of this tutorial you will have created a content model for a contract
 <br>
 
 ## Prerequisites
-To complete this tutorial you need to have the latest Alfresco Content Services up and running. We suggest to [spin up an online trial](http://alfresco.com/try-acs) or [download the 30 day trial](https://www.alfresco.com/platform/content-services-ecm/trial/download). 
+To complete this you need to have the latest Alfresco Content Services up and running. We suggest to [spin up an online trial](http://alfresco.com/try-acs) or [download the 30 day trial](https://www.alfresco.com/platform/content-services-ecm/trial/download). 
 
 <br>
 <br>
