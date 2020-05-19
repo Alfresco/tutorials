@@ -30,7 +30,7 @@ They do not, however, substitute physical folders as they are only a collection 
 
 Before you can use Smart Folders you must tell ACS to enable them, just open the docker-compose file and add the following line:
 
-![enableSmartFolder](../images/enableSmart.png)
+![enableSmartFolder](../images/contract-management/enableSmart.png)
 
 <br />
 <br />
@@ -74,11 +74,11 @@ Click “Select” under “Smart Folder Template” and again navigate to “Da
 
 <br />
 
-![addSmartFolder](../images/addSmartFolder.gif)
+![addSmartFolder](../images/contract-management/addSmartFolder.gif)
 
 <br />
 
-![assignTemplate](../images/assignTemplate.gif)
+![assignTemplate](../images/contract-management/assignTemplate.gif)
 
 <br />
 <br />

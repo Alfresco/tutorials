@@ -46,7 +46,7 @@ Give your group an ID and a name (legal, Legal):
 
 <br />
 
-![createGroup](../images/createGroup.gif)
+![createGroup](../images/contract-management/createGroup.gif)
 
 <br />
 
@@ -56,7 +56,7 @@ Assign a user to a group by typing in the group you need (Legal) in the “Searc
 
 <br />
 
-![addGroup](../images/addGroup.gif)
+![addGroup](../images/contract-management/addGroup.gif)
 
 <br />
 <br />
@@ -73,7 +73,7 @@ Now change the role to “Contributor”.
 
 <br />
 
-![setContractsPermission](../images/setContractsPermissions.gif)
+![setContractsPermission](../images/contract-management/setContractsPermissions.gif)
 
 <br />
 
@@ -92,7 +92,7 @@ Log in as one of the Legal group members and search for your site under “Sites
 
 <br />
 
-![changeUserJoinGroup](../images/changeUserJoinGroup.gif)
+![changeUserJoinGroup](../images/contract-management/changeUserJoinGroup.gif)
 
 <br />
 

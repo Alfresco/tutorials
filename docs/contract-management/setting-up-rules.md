@@ -43,7 +43,7 @@ To do so head to the site you created and open the “Document Library”. Hover
 
 <br />
 
-![createRule](../images/createRule.gif)
+![createRule](../images/contract-management/createRule.gif)
 
 <br />
 
@@ -52,7 +52,7 @@ Click “Create Rule” and type in:
 
 <br />
 
-![ruleSetType](../images/ruleSetType.png)
+![ruleSetType](../images/contract-management/ruleSetType.png)
 
 <br />
 
@@ -78,15 +78,15 @@ addingStatusCondition <*missing sub menu*>
 
 <br />
 
-![ruleMoveToNew](../images/ruleMoveToNew.png)
+![ruleMoveToNew](../images/contract-management/ruleMoveToNew.png)
 
 <br />
 
-![ruleMoveToReview](../images/ruleMoveToReview.png)
+![ruleMoveToReview](../images/contract-management/ruleMoveToReview.png)
 
 <br />
 
-![ruleMoveToApproved](../images/ruleMoveToApproved.png)
+![ruleMoveToApproved](../images/contract-management/ruleMoveToApproved.png)
 
 <br />
 
@@ -98,7 +98,7 @@ Just like that:
 
 <br />
 
-![rulePdfCopy](../images/rulePdfCopy.png)
+![rulePdfCopy](../images/contract-management/rulePdfCopy.png)
 
 <br />
 

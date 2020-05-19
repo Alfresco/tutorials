@@ -52,7 +52,7 @@ But let’s get back to your Content Model: Click “Create Custom Type” and g
 
 <br />
 
-![customType](../images/costumType.png)
+![customType](../images/contract-management/costumType.png)
 
 It is good form to use camelCase for name.
 
@@ -61,7 +61,7 @@ It is good form to use camelCase for name.
 After you created the Custom Type click on its name to display its properties, since you didn’t add any so far this site should be empty. Let’s change that.
 Click on “Create Property” and type in:
 
-![ctId](../images/ctId.png)
+![ctId](../images/contract-management/ctId.png)
 
 <br />
 
@@ -118,7 +118,7 @@ Now that you have the basic properties for every contract, let’s create some m
 
 <br />
 
-![aspEmp](../images/aspEmp.png)
+![aspEmp](../images/contract-management/aspEmp.png)
 
 <br />
 
@@ -273,7 +273,7 @@ This is how your layout could look like:
 
 <br />
 
-![layout](../images/layoutCtContract.png)
+![layout](../images/contract-management/layoutCtContract.png)
 
 <br />
 
@@ -289,7 +289,7 @@ Open the drop- down menu under “Sites” in the Top- bar and click “Create S
 
 <br />
 
-![createSite](../images/createSite.gif)
+![createSite](../images/contract-management/createSite.gif)
 
 <br />
 
@@ -299,7 +299,7 @@ Access the “New” folder, click “Upload” and choose any document you want
 
 <br />
 
-![createFolder](../images/createFolder.gif)
+![createFolder](../images/contract-management/createFolder.gif)
 
 <br />
 
