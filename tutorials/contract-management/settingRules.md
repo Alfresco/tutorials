@@ -7,7 +7,7 @@ Alfresco Rules and Actions automate a range of content centric actions. This aut
 
 ## Prerequisites
 
-In order to successfully complete this tutorial you will need to have completed the previous tutorial about Content Modeling in order to have a model for Contracts which will be used for the example rules in this tutorial.
+In order to successfully complete this [tutorial](contentModel.md) you will need to have completed the previous tutorial about Content Modeling in order to have a model for Contracts which will be used for the example rules in this tutorial.
 
 In order to create rules you will need to login into Alfresco Share as this is currently the only application that enables you to create rules. 
 

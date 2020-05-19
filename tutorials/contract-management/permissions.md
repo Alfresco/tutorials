@@ -15,7 +15,7 @@ Setting up permissions can ensure only the right users can do certain actions.
 
 ## Prerequisites
 
-This tutorial is a continuation of ***“Getting started with Content Modeling”*** and ***“Setting up Rules”***, so please make sure to complete those before you go on.
+This tutorial is a continuation of [Getting started with Content Modeling](contentModel.md) and [Setting up Rules](settingRules.md), so please make sure to complete those before you go on.
 
 <br>
 <br>
