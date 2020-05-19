@@ -10,15 +10,15 @@ Up to this point any user in your system can enter any folder and change the sta
 
 Setting up permissions can ensure only the right users can do certain actions.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Prerequisites
 
 This tutorial is a continuation of [Getting started with Content Modeling](contentModel.md) and [Setting up Rules](settingRules.md), so please make sure to complete those before you go on.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Understanding permissions in Alfresco Content Services
 
@@ -34,8 +34,8 @@ The Consumer role has no uploading or editing permissions whatsoever, it can onl
 
 These are the default permissions shipped in Alfresco Content Services, but through extending the platform you can build custom roles and permissions based on the lower level Access Control Lists. Extensions like Alfresco Governance Services provide another layer of permissions to your content with security marks and classification. However, for this tutorial we will focus on the basics.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Managing users and groups
 
@@ -44,22 +44,22 @@ In order to test the different permissions we need to create a few users and gro
 Navigate to “Admin Tools” and click “Groups” in the sidebar, then hit “Browse” and find the little “+” in the upper right corner of the list that follows.
 Give your group an ID and a name (legal, Legal):
 
-<br>
+<br />
 
-![createGroup](../../images/createGroup.gif)
+![createGroup](../images/createGroup.gif)
 
-<br>
+<br />
 
 Now that you have a group let’s fill it with some users, for that just change to “Users” in the side bar and select “New User”. How you name your users doesn’t matter, just make sure to create at least three of them: two in “Legal” and the other one without any group.
 
 Assign a user to a group by typing in the group you need (Legal) in the “Search” field at the bottom and selecting it in the result window.
 
-<br>
+<br />
 
-![addGroup](../../images/addGroup.gif)
+![addGroup](../images/addGroup.gif)
 
-<br>
-<br>
+<br />
+<br />
 
 ## Setting up permissions
 
@@ -71,11 +71,11 @@ As it is now, “Share” created groups, which have the same role throughout th
 
 Now change the role to “Contributor”.
 
-<br>
+<br />
 
-![setContractsPermission](../../images/setContractsPermissions.gif)
+![setContractsPermission](../images/setContractsPermissions.gif)
 
-<br>
+<br />
 
 Now everybody can upload a new contract, but also just send it through review and approve it themselves.
 
@@ -90,11 +90,11 @@ Let’s check if everything works as it should.
 
 Log in as one of the Legal group members and search for your site under “Sites” in the top bar. Click “Join” on the right then select the site to access it.
 
-<br>
+<br />
 
-![changeUserJoinGroup](../../images/changeUserJoinGroup.gif)
+![changeUserJoinGroup](../images/changeUserJoinGroup.gif)
 
-<br>
+<br />
 
 Head to the “Contracts” folder and upload any document you like. Edit some properties to make sure that you actually can change the metadata of your own content then move it to “Review” by changing its status. 
 
@@ -112,8 +112,8 @@ Since everyone is still a Contributor in the “Contracts” folder  you are sti
 If everything works well you are now able to create your own site using simple Content Models and automated processes coordinated by rules.
 You can also manufacture rudimentary workflows by setting permissions.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Summary
 
@@ -123,8 +123,8 @@ If you want to know more about permissions, you should have a look at this link:
 
 - [Listing of user roles in greater detail](https://docs.alfresco.com/6.2/references/permissions_share.html)
 
-<br>
-<br>
+<br />
+<br />
 
 ## Next Steps
 

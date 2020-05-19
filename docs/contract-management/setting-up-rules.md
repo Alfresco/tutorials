@@ -2,8 +2,8 @@
 
 Alfresco Rules and Actions automate a range of content centric actions. This automation removes the need for users to perform repeatable tasks and ensures that tasks are carried out in a timely manner, with consistency and efficiently. Think of Rules and Actions as a “If This That Then” tool for Content Management.  
 
-<br>
-<br>
+<br />
+<br />
 
 ## Prerequisites
 
@@ -11,8 +11,8 @@ In order to successfully complete this [tutorial](contentModel.md) you will need
 
 In order to create rules you will need to login into Alfresco Share as this is currently the only application that enables you to create rules. 
 
-<br>
-<br>
+<br />
+<br />
 
 ## Understanding rules
 
@@ -29,8 +29,8 @@ Actions are the core of the rule, they determine what happens with the content t
 
 Last but not least rules can be applied to subfolders and run either asynchronous or synchronous. Running rules “in the background” means the rule will execute after the content has been uploaded. This is important for operations that could take long or potentially fail - if the rule is running synchronously and fails the content will not be uploaded. 
 
-<br>
-<br>
+<br />
+<br />
 
 ## Creating your first rule
 
@@ -41,26 +41,26 @@ As it is now, you would have to do everything manually from declaring a document
 All that can be automated by setting up a few rules.
 To do so head to the site you created and open the “Document Library”. Hover over your Contracts folder, expand “More” on the right and click “Manage Rules”. 
 
-<br>
+<br />
 
-![createRule](../../images/createRule.gif)
+![createRule](../images/createRule.gif)
 
-<br>
+<br />
 
 The first one you want to establish is that every document you upload into this folder is automatically declared a “Contract”.
 Click “Create Rule” and type in:
 
-<br>
+<br />
 
-![ruleSetType](../../images/ruleSetType.png)
+![ruleSetType](../images/ruleSetType.png)
 
-<br>
+<br />
 
 This rule will take every document that isn’t already a “Contract” and turn it into one.
 Make sure to tick “Rule applies to subfolders” to ensure that documents directly dropped into one of those are still declared “Contracts”.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Automatically organising contracts
 
@@ -72,23 +72,23 @@ These rules are created as follows:
 
 Click “Show more” in the first dropdown menu that is missing in the next Gif:
 
-<br>
+<br />
 
 addingStatusCondition <*missing sub menu*>
 
-<br>
+<br />
 
-![ruleMoveToNew](../../images/ruleMoveToNew.png)
+![ruleMoveToNew](../images/ruleMoveToNew.png)
 
-<br>
+<br />
 
-![ruleMoveToReview](../../images/ruleMoveToReview.png)
+![ruleMoveToReview](../images/ruleMoveToReview.png)
 
-<br>
+<br />
 
-![ruleMoveToApproved](../../images/ruleMoveToApproved.png)
+![ruleMoveToApproved](../images/ruleMoveToApproved.png)
 
-<br>
+<br />
 
 Now every time the status of a contract in any of the subfolders gets updated it is automatically moved to the appropriate folder.
 Even newly uploaded contracts get sorted according to their status. 
@@ -96,11 +96,11 @@ Even newly uploaded contracts get sorted according to their status.
 After the contract has been approved there is no need for it to still be editable, so let’s create a rule that fabricates a pdf copy of it.
 Just like that:
 
-<br>
+<br />
 
-![rulePdfCopy](../../images/rulePdfCopy.png)
+![rulePdfCopy](../images/rulePdfCopy.png)
 
-<br>
+<br />
 
 Let’s put your rules to the test.
 
@@ -112,17 +112,17 @@ Now set the Status to “Review” by selecting “Edit Properties” and changi
 
 After you updated the status you can see that the path of your contract, which is displayed over the document's name, has changed.
 
-<br>
+<br />
 
 -----------------ruleCheck <*missing sub menu*>---------------------------------
 
-<br>
+<br />
 
 Just to make sure, change the Status again to approved this time and check if the path changes again.
 Also have a look if there is a pdf copy of your document in your “Approved” folder.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Summary
 
@@ -139,8 +139,8 @@ If you’re interested in learning more about rules checkout these resources:
   
 - [Linking to an existing rule set](https://docs.alfresco.com/6.2/tasks/library-folder-rules-define-link.html)
 
-  <br>
-  <br>
+  <br />
+  <br />
 
 ## Next Steps
 

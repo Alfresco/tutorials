@@ -8,14 +8,14 @@ The purpose of this tutorial is to show you some of the powerful modeling capabi
 
 At the end of this tutorial you will have created a content model for a contract which will specialize uploaded documents as contracts and add metadata depending on the type of contract.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Prerequisites
 To complete this you need to have the latest Alfresco Content Services up and running. We suggest to [spin up an online trial](http://alfresco.com/try-acs) or [download the 30 day trial](https://www.alfresco.com/platform/content-services-ecm/trial/download). 
 
-<br>
-<br>
+<br />
+<br />
 
 ## Glossary
 As we advance into the Alfresco platform it’s easy to lose track of all the different moving parts. Here’s a cheat sheet with the different product areas and namings we will be using moving forward:  
@@ -23,8 +23,8 @@ As we advance into the Alfresco platform it’s easy to lose track of all the di
 - ADW = Alfresco Digital Workspace  
 - Share = Web application that offers some configuration and administration features
 
-<br>
-<br>
+<br />
+<br />
  
 ## Creating your first Content Model
 
@@ -38,7 +38,7 @@ Now click “Create Model” and give your model a namespace: For this tutorial 
 
 After naming your Content Model let’s fill it with a Custom Type and some Aspects.
 
-<br>
+<br />
 
 ***… a quick note on Types and Aspects***  
 A Custom Type is a set of properties every document of a specific category must have.
@@ -46,24 +46,24 @@ If you think of documents as vehicles, a Custom Type could be “Car”, the pro
 
 Aspects are also a set of properties, but are not bound to one type. To use the metaphor again: After you declared your vehicle a car it has an engine, wheels and a steering wheel. An Aspect could be “Deluxe Package”, which would add heated seats, air conditioning and memory seats. This Aspect could also be used for other Custom Types like Bus or Boat.
 
-<br>
+<br />
 
 But let’s get back to your Content Model: Click “Create Custom Type” and give it a name and display label like this:
 
-<br>
+<br />
 
-![customType](../../images/costumType.png)
+![customType](../images/costumType.png)
 
 It is good form to use camelCase for name.
 
-<br>
+<br />
 
 After you created the Custom Type click on its name to display its properties, since you didn’t add any so far this site should be empty. Let’s change that.
 Click on “Create Property” and type in:
 
-![ctId](../../images/ctId.png)
+![ctId](../images/ctId.png)
 
-<br>
+<br />
 
 
 |  Property       |  Value      |
@@ -73,7 +73,7 @@ Click on “Create Property” and type in:
 |  Data Type      |  Long       |
 |  Requirement    |  Mandatory  |
 
-<br>
+<br />
 
 |  Property       |  Value       |
 |  ---            |  ---         |
@@ -82,7 +82,7 @@ Click on “Create Property” and type in:
 |  Data Type      |  Date        |
 |  Requirement    |  Mandatory   |
 
-<br>
+<br />
 
 |  Property       |  Value        |
 |  ---            |  ---          |
@@ -91,7 +91,7 @@ Click on “Create Property” and type in:
 |  Data Type      |  Date         |
 |  Requirement    |  Optional     |
 
-<br>
+<br />
 
 |  Property       |  Value             |
 |  ---            |  ---               |
@@ -100,7 +100,7 @@ Click on “Create Property” and type in:
 |  Data Type      |  Date              |
 |  Requirement    |  Optional          |
 
-<br>
+<br />
 
 |  Property        |  Value                         |
 |  ---             |  ---                           |
@@ -110,39 +110,39 @@ Click on “Create Property” and type in:
 |  Requirement     |  Mandatory                     |
 |  Default Value   |  New                           |
 |  Constraint      |  List of Values                |
-|  List of Values  |  New <br> Review<br> Approved  |
+|  List of Values  |  New <br /> Review<br /> Approved  |
 
-<br>
+<br />
 
 Now that you have the basic properties for every contract, let’s create some more specified properties with Aspects. Head back to “Custom Types and Aspects” and click “Create Aspect”, then type the following:
 
-<br>
+<br />
 
-![aspEmp](../../images/aspEmp.png)
+![aspEmp](../images/aspEmp.png)
 
-<br>
+<br />
 
 |  Property       |  Value     |
 |  ---            |  ---       |
 |  Name           |  employee  |
 |  Display Label  |  Employee  |
 
-<br>
+<br />
 
 Click “Create” and make another one.
 
-<br>
+<br />
 
 |  Property       |  Value   |
 |  ---            |  ---     |
 |  Name           |  vendor  |
 |  Display Label  |  Vendor  |
 
-<br>
+<br />
 
 Now you have two unpopulated Aspects. Hit the name of “employee” and click “Create Property” on the following screen. Then create the following Properties:
 
-<br>
+<br />
 
 |  Property        |  Value                           |
 |  ---             |  ---                             |
@@ -152,11 +152,11 @@ Now you have two unpopulated Aspects. Hit the name of “employee” and click �
 |  Requirement     |  Mandatory                       |
 |  Default Value   |  ---                             |
 |  Constraint      |  List of Values                  |
-|  List of Values  |  IT <br> HR<br> Sales<br> Legal  |
+|  List of Values  |  IT <br /> HR<br /> Sales<br /> Legal  |
 
 Tick “List Alphanumerically”
 
-<br>
+<br />
 
 |  Property       |  Value          |
 |  ---            |  ---            |
@@ -165,7 +165,7 @@ Tick “List Alphanumerically”
 |  Data Type      |  Text           |
 |  Requirement    |  Mandatory      |
 
-<br>
+<br />
 
 |  Property       |  Value       |
 |  ---            |  ---         |
@@ -174,7 +174,7 @@ Tick “List Alphanumerically”
 |  Data Type      |  Long        |
 |  Requirement    |  Mandatory   |
 
-<br>
+<br />
 
 |  Property        |  Value                    |
 |  ---             |  ---                      |
@@ -186,7 +186,7 @@ Tick “List Alphanumerically”
 |  Minimum Length  |  1                        |
 |  Maximum Length  |  60                       |
 
-<br>
+<br />
 
 |  Property       |  Value                  |
 |  ---            |  ---                    |
@@ -196,7 +196,7 @@ Tick “List Alphanumerically”
 |  Requirement    |  Optional               |
 |  Default Value  |  False                  |           
 
-<br>
+<br />
 
 |  Property       |  Value          |
 |  ---            |  ---            |
@@ -206,15 +206,15 @@ Tick “List Alphanumerically”
 |  Requirement    |  Mandatory      |
 |  Default Value  |  1/1/2020       |
 
-<br>
+<br />
 
 Note that you could use these properties on every document concerning an employee and that is what really sets Aspects apart: their versatility.
 
-<br>
+<br />
 
 Head back and click on “vendor” and add the following properties:
 
-<br>
+<br />
 
 |  Property       |  Value           |
 |  ---            |  ---             |
@@ -223,7 +223,7 @@ Head back and click on “vendor” and add the following properties:
 |  Data Type      |  Text            |
 |  Requirement    |  Mandatory       |
 
-<br>
+<br />
 
 |  Property       |  Value         |
 |  ---            |  ---           |
@@ -232,7 +232,7 @@ Head back and click on “vendor” and add the following properties:
 |  Data Type      |  Text          |
 |  Requirement    |  Mandatory     |
 
-<br>
+<br />
 
 |  Property        |  Value           |
 |  ---             |  ---             |
@@ -242,11 +242,11 @@ Head back and click on “vendor” and add the following properties:
 |  Requirement     |  Mandatory       |
 |  Default Value   |  ---             |
 |  Constraint      |  List of Values  |
-|  List of Values  |  Europe<br> Africa<br> Asia<br> South America<br> North America<br> Australia                 |
+|  List of Values  |  Europe<br /> Africa<br /> Asia<br /> South America<br /> North America<br /> Australia                 |
 
 Tick “Sort Alphanumerically”
 
-<br>
+<br />
 
 |  Property       |  Value       |
 |  ---            |  ---         |
@@ -255,7 +255,7 @@ Tick “Sort Alphanumerically”
 |  Data Type      |  Float       |
 |  Requirement    |  Mandatory   |
 
-<br>
+<br />
 
 |  Property       |  Value        |
 |  ---            |  ---          |
@@ -264,18 +264,18 @@ Tick “Sort Alphanumerically”
 |  Data Type      |  Text         |
 |  Requirement    |  Mandatory    |
 
-<br>
+<br />
 
 Now that you have a working Model let’s give it an interface for filling out your contracts metadata.
 To do that go back to “Custom Types and Aspects” and open the “Actions” dropdown menu in the “contract” line, then click “Layout Designer”.
 Here you can find several layout- templates at the top of the screen, just drag and drop any template you like into the “Layout Area” and fill them with the properties you created (also by drag and drop).
 This is how your layout could look like:
 
-<br>
+<br />
 
-![layout](../../images/layoutCtContract.png)
+![layout](../images/layoutCtContract.png)
 
-<br>
+<br />
 
 If you want to rename a template just click on it and change the “Display Label” in the “Edit Properties” pop- up as shown in the screenshot above.
 After you have created your layout don’t forget to hit “Save”.
@@ -287,38 +287,38 @@ Now that your Content Model is complete you can activate it by heading all the w
 Lastly, let’s test your newly built Model. 
 Open the drop- down menu under “Sites” in the Top- bar and click “Create Site”. Give your site a name like “myCorp” and it will be copied into the “Site ID” as well. Leave everything else as is and hit “Create”.
 
-<br>
+<br />
 
-![createSite](../../images/createSite.gif)
+![createSite](../images/createSite.gif)
 
-<br>
+<br />
 
 Now go to your “Document Library” in the top right corner and choose “Create Folder”.
 Call it “Contracts” and create three more folders within it called “New”, “Review” and “Approved” (Those will become more important in future tutorials).
 Access the “New” folder, click “Upload” and choose any document you want.
 
-<br>
+<br />
 
-![createFolder](../../images/createFolder.gif)
+![createFolder](../images/createFolder.gif)
 
-<br>
+<br />
 
 -----------------uploadFile <*missing sub menu*>---------------------------------
 
-<br>
+<br />
 
 Once it’s uploaded click on it to open up the document preview and choose “Change Type” on the right. In the drop down menu choose “Contract” and precede by clicking “Manage Aspects”, again on the right side of the screen. Here you actually have a lot more options than the two Aspects you’ve already created, but ignore them for now and either click “employee” or “vendor” then hit “Apply Changes”.
 
-<br>
+<br />
 
 -----------------changeTypeAndAspects <*missing sub menu*>------------------------
 
-<br>
+<br />
 
 If you now go to “Edit Properties” you can fill in all the properties of the Custom Type “Contract” and your chosen Aspect to your specifications.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Summary
 
@@ -333,8 +333,8 @@ If you’re interested in learning more details about Content Modeling we sugges
   
 - [Video: Create models with Model Manager](https://docs.alfresco.com/6.2/concepts/alfresco-tutorial-24.html)
 
-<br>
-<br>
+<br />
+<br />
 
 ## Next Steps
 

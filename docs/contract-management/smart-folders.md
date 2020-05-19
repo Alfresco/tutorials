@@ -3,8 +3,8 @@
 Smart Folders are simply put folders, which browse your file system according to specifications 
 you choose, thereby helping you navigate through your site more easily.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Prerequisites
 
@@ -13,8 +13,8 @@ This tutorial is part of a set of five and requires you to have completed the pr
 - [Rules](settingRules.md)
 - [Permissions](permissions.md)
 
-<br>
-<br>
+<br />
+<br />
 
 ## How do Smart Folders work
 
@@ -23,17 +23,17 @@ It is worth noting that “Smart Folder” is only another Aspect, albeit an a l
 In a “Smart Folder Template” you can also determine the Smart Folder Structure within the folder you assigned the Aspect to, which means you can create multiple Smart Folders within a single template.  
 They do not, however, substitute physical folders as they are only a collection of documents gathered from different places in your site and they always need a physical folder to live in.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Enabling Smart Folders
 
 Before you can use Smart Folders you must tell ACS to enable them, just open the docker-compose file and add the following line:
 
-![enableSmartFolder](../../images/enableSmart.png)
+![enableSmartFolder](../images/enableSmart.png)
 
-<br>
-<br>
+<br />
+<br />
 
 ## Creating your template
 Now you will need to create a template to use on your site.  
@@ -57,14 +57,14 @@ The next nodes are easily summarized as all they do is gather contracts concerni
 
 Where the first node picked documents by their type, the last one filters them by aspects and only displays those who concern vendors.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Implementing the template
 Now that you have an idea of how the template works, let’s implement it into your site.  
 For that log into ACS as admin and click “Repository” in the nav bar at the top of the screen, then navigate to “Data Dictionary/Smart Folder Templates” and upload your template.
 
-<br>
+<br />
 
 -----------------uploadTemplate <*missing sub menu*>-----------------------------
 
@@ -72,22 +72,22 @@ Next create a new folder in the “Contracts” directory within your site and c
 Add “Custom Smart Folder” from the left bar by clicking the “+” sign, then select “Edit Properties” and “All Properties”.  
 Click “Select” under “Smart Folder Template” and again navigate to “Data Dicionary/Smart Folder Templates” and select your template.
 
-<br>
+<br />
 
-![addSmartFolder](../../images/addSmartFolder.gif)
+![addSmartFolder](../images/addSmartFolder.gif)
 
-<br>
+<br />
 
-![assignTemplate](../../images/assignTemplate.gif)
+![assignTemplate](../images/assignTemplate.gif)
 
-<br>
-<br>
+<br />
+<br />
 
 ## Testing
 
 Let’s see if everything works as it should. Check the folder you just created, within it there should be the following structure.
 
-<br>
+<br />
 
 ```
 .
@@ -103,7 +103,7 @@ Let’s see if everything works as it should. Check the folder you just created,
 │   └── Overdue
 └── Vendor_Contracts
 ```
-<br>
+<br />
 
 Depending on what you already uploaded, some of those folders should already be populated but let’s test the folders with a few specific documents.
 
@@ -112,8 +112,8 @@ Now check the “Current” folder, there should be the two employee contracts i
 That contract should also be in “Vendor Contracts”.  
 Lastly look into the folders for the two departments you chose on your employee contracts and see if you can find them in there.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Summary
 
@@ -129,12 +129,12 @@ With Smart Folders you are now able to navigate your much quicker. If you want t
   
 - [FAQs](https://docs.alfresco.com/5.1/references/sf-tech-faqs.html)
 
-<br>
+<br />
 
 By the way, if you want to expand on the template you created in this tutorial you can update it in ACS by selecting it in “Repository/Data Dictionary/Smart Folder Templates” and clicking “Upload New Version”.
 
-<br>
-<br>
+<br />
+<br />
 
 ## Next Steps
 
