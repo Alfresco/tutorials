@@ -25,7 +25,7 @@ As we advance into the Alfresco platform it’s easy to lose track of all the di
 
 <br />
 <br />
- 
+
 ## Creating your first Content Model
 
 Now that you have ACS running, you need to log in to “Share”. If you are running an [online trial](http://alfresco.com/try-acs) the link to Share will be in the email you received along with the login credentials. 
