@@ -56,7 +56,7 @@ Assign a user to a group by typing in the group you need (Legal) in the “Searc
 
 <br />
 
-![addGroup](../images/contract-management/addGroup.gif)
+![addUserToGroup](../images/contract-management/addUserToGroup.gif)
 
 <br />
 <br />
