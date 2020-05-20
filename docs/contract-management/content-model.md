@@ -305,6 +305,8 @@ Access the “New” folder, click “Upload” and choose any document you want
 
 -----------------uploadFile <*missing sub menu*>---------------------------------
 
+![uploadFile](../images/contract-management/uploadFile.gif)
+
 <br />
 
 Once it’s uploaded click on it to open up the document preview and choose “Change Type” on the right. In the drop down menu choose “Contract” and precede by clicking “Manage Aspects”, again on the right side of the screen. Here you actually have a lot more options than the two Aspects you’ve already created, but ignore them for now and either click “employee” or “vendor” then hit “Apply Changes”.
@@ -312,6 +314,8 @@ Once it’s uploaded click on it to open up the document preview and choose “C
 <br />
 
 -----------------changeTypeAndAspects <*missing sub menu*>------------------------
+
+![changeTypeAndAddAspect](../images/contract-management/changeTypeAndAddAspect.gif)
 
 <br />
 

@@ -69,6 +69,10 @@ For that log into ACS as admin and click “Repository” in the nav bar at the 
 
 -----------------uploadTemplate <*missing sub menu*>-----------------------------
 
+![uploadTemplate](../images/contract-management/uploadTemplate.gif)
+
+<br />
+
 Next create a new folder in the “Contracts” directory within your site and click “Manage Aspects”.  
 Add “Custom Smart Folder” from the left bar by clicking the “+” sign, then select “Edit Properties” and “All Properties”.  
 Click “Select” under “Smart Folder Template” and again navigate to “Data Dicionary/Smart Folder Templates” and select your template.

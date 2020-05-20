@@ -116,6 +116,8 @@ After you updated the status you can see that the path of your contract, which i
 
 -----------------ruleCheck <*missing sub menu*>---------------------------------
 
+![ruleCheck](../images/contract-management/ruleCheck.gif)
+
 <br />
 
 Just to make sure, change the Status again to approved this time and check if the path changes again.
