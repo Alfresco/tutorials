@@ -141,4 +141,4 @@ By the way, if you want to expand on the template you created in this tutorial y
 Your test site is almost done now: It uses a Content Model to categorize your documents as contracts and automatically organizes them using rules.  
 Also you established a hierarchy by setting up groups and assigning them different sets of permissions and you gave your site an easy way to access content from anywhere on it with Smart Folders.
 
-The last thing that’s missing is…
+The last thing that’s missing is creating a basic ADF Application.

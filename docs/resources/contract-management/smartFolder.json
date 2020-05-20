@@ -1,0 +1,99 @@
+{
+    "name" : "Smart Folders",
+
+    "nodes" :[
+        {
+            "id" : "1",
+            "name" : "My Contracts",
+            "search":{
+                "language": "fts-alfresco",
+                "query": "=cm:creator:%CURRENT_USER% AND +TYPE:'ct:contract'"
+            },
+            
+            "nodes" :[
+                {
+                    "id" : "11",
+                    "name" : "Current",
+                    "search" :{
+                        "language" : "fts-alfresco",
+                        "query" : "+ct:draftDate:[NOW/DAY-7DAYS TO TODAY] AND =cm:creator:%CURRENT_USER%"
+                    }
+                },
+
+                {
+                    "id" : "12",
+                    "name" : "Overdue",
+                    "search" :{
+                        "language" : "fts-alfresco",
+                        "query":"ct:draftDate:[MIN TO NOW/DAY-7DAYS] AND -ct:status:'Approved'"
+                    }
+                }
+            ]
+
+        }, 
+
+        {
+            "id" : "2",
+            "name" : "Employee Contracts",
+        
+            "nodes" :[
+                {
+                    "id" : "21",
+                    "name" : "By Department",
+
+                    "nodes" :[
+                        {
+                            "id": "211",
+                            "name": "IT",
+                            "search": {
+                                "language": "fts-alfresco",
+                                "query": "+ct:department:'IT'"
+                            }
+                        },
+                        {
+                            "id": "212",
+                            "name": "HR",
+                            "search": {
+                                "language": "fts-alfresco",
+                                "query": "+ct:department:'HR'"
+                            }
+                        },
+                        {
+                            "id": "213",
+                            "name": "Sales",
+                            "search": {
+                                "language": "fts-alfresco",
+                                "query": "+ct:department:'Sales'"
+                            }
+                        },
+                        {
+                            "id": "214",
+                            "name": "Marketing",
+                            "search": {
+                                "language": "fts-alfresco",
+                                "query": "+ct:department:'Marketing'"
+                            }
+                        },
+                        {
+                            "id": "215",
+                            "name": "Legal",
+                            "search": {
+                                "language": "fts-alfresco",
+                                "query": "+ct:department:'Legal'"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "id" : "3",
+            "name" : "Vendor Contracts",
+            "search" :{
+                "language" : "fts-alfresco",
+                "query" : "+ASPECT:'ct:vendor'"
+            }
+        }
+    ]
+}
