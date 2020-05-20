@@ -1,7 +1,6 @@
 # Smart Folders
 
-Smart Folders are simply put folders, which browse your file system according to specifications 
-you choose, thereby helping you navigate through your site more easily.
+Smart Folders are a great tool for intuitively navigating your site. They browse your content by specifications you choose and present them in a structured way for you to examine.
 
 <br />
 <br />
@@ -20,7 +19,7 @@ This tutorial is part of a set of five and requires you to have completed the pr
 
 Smart Folders use so-called “Smart Folder Templates” to browse your content for parameters specified within these templates.  
 It is worth noting that “Smart Folder” is only another Aspect, albeit an a little more complex one.  
-In a “Smart Folder Template” you can also determine the Smart Folder Structure within the folder you assigned the Aspect to, which means you can create multiple Smart Folders within a single template.  
+Also you can create multiple Smart Folders within a single template, enabling you to construct an entire structure in your physical folder.
 They do not, however, substitute physical folders as they are only a collection of documents gathered from different places in your site and they always need a physical folder to live in.
 
 <br />
@@ -29,6 +28,8 @@ They do not, however, substitute physical folders as they are only a collection 
 ## Enabling Smart Folders
 
 Before you can use Smart Folders you must tell ACS to enable them, just open the docker-compose file and add the following line:
+
+<br />
 
 ![enableSmartFolder](../images/contract-management/enableSmart.png)
 
@@ -39,12 +40,12 @@ Before you can use Smart Folders you must tell ACS to enable them, just open the
 Now you will need to create a template to use on your site.  
 For that use the editor of your choosing or just download [Visual Studio Code](https://code.visualstudio.com/download). 
 You can find the finished template [here](../resources/contract-management/smartFolder.json), but let’s go through it and see what is doing what.  
-First of all a json file, which is the data type any Smart Folder Template is written in, is only allowed to have one object, that’s why the first folder only has a name and no ID or query: It only serves as a container and isn’t displayed on your site.  
+First of all a json file, which is the data type every Smart Folder Template is written in, is only allowed to have one object, that’s why the outer most one only has a name and no ID or query: It only serves as a container and isn’t displayed on your site.  
 It doesn’t even need the name, but for the sake of understandability let’s leave it in as a form of headline for your template.  
 The next interesting tag is “nodes”, every node will be displayed as a subfolder, thus being the core of your template.  
 These nodes use the “search” tag to know what they are looking for. Every “search” tag consists of a “language” and “query” tag. The former specifying how the latter is to be interpreted.  
 
-The first node of your template gathers every document the user you are currently logged in as has ever uploaded and narrows it down to only contracts. It’s worth noting that “ct” is the prefix you gave your content model way back in the first tutorial.
+The first node of your template gathers every document, the user you are currently logged in as, has ever uploaded and narrows it down to only contracts. It’s worth noting that “ct” is the prefix you gave your content model way back in the first tutorial.
 
 So this subfolder will hold every contract you ever uploaded, no matter its status but what if you only want to see the most recent and probably most relevant ones?  
 That’s what the node with the name “Current” is for, it also takes every document created by your current user and filters it for the content of the last week. 
@@ -105,7 +106,7 @@ Let’s see if everything works as it should. Check the folder you just created,
 ```
 <br />
 
-Depending on what you already uploaded, some of those folders should already be populated but let’s test the folders with a few specific documents.
+Depending on what you've already uploaded, some of those folders should already be populated but let’s test the folders with a few specific documents.
 
 First create a vendor contract and set the draftDate to 1/1/2020, then create two employee contracts, set one draftDate to today and the other to the day before yesterday, also choose two different departments.  
 Now check the “Current” folder, there should be the two employee contracts in there. Next go and look if the vendor contract is in the “Overdue” folder.
@@ -117,7 +118,7 @@ Lastly look into the folders for the two departments you chose on your employee 
 
 ## Summary
 
-With Smart Folders you are now able to navigate your much quicker. If you want to expand on the already existing structure or learn more you should check out these links:
+With Smart Folders you are now able to navigate your site much quicker. If you want to expand on the already existing structure or learn more you should check out these links:
 
 - [Video Tutorials](https://docs.alfresco.com/5.1/topics/smart-video-tutorials.html)
   
