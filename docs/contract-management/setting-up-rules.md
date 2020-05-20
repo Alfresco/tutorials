@@ -64,17 +64,18 @@ Make sure to tick “Rule applies to subfolders” to ensure that documents dire
 
 ## Automatically organising contracts
 
-Now that all documents that get uploaded into the “Contracts” folder are specialized as Contracts let’s make rules to manage where Contracts are stored according to their status.
+Now that all documents dropped into the “Contracts” folder are specialized as Contracts let’s make rules to manage where Contracts are stored according to their status.
 
-We do this by creating three separate rules which apply when a contract is created or updated. The contract is to be moved into the selected folder based on the status property.
+This is done by creating three separate rules which apply when a contract is created or updated. The contract is to be moved into the selected folder based on the status property.
 
 These rules are created as follows:
 
-Click “Show more” in the first dropdown menu that is missing in the next Gif:
+Conditions can include any property you've created, for them to be show up open the dropdown menu "All items" and selcect "Show more".
+Then click "Types" and "Contract" on the left side and tick the box next to "status" on the right:
 
 <br />
 
-addingStatusCondition <*missing sub menu*>
+![addingStatusCondition](../images/contract-management/addingStatusCondition.gif) 
 
 <br />
 
@@ -93,8 +94,8 @@ addingStatusCondition <*missing sub menu*>
 Now every time the status of a contract in any of the subfolders gets updated it is automatically moved to the appropriate folder.
 Even newly uploaded contracts get sorted according to their status. 
 
-After the contract has been approved there is no need for it to still be editable, so let’s create a rule that fabricates a pdf copy of it.
-Just like that:
+After the contract has been approved there is no need for it to still be editable, so let’s edit the "Move to Approved" by selcting it and clicking "Edit" on the right.  
+Then add an Action just like that:
 
 <br />
 
@@ -113,8 +114,6 @@ Now set the Status to “Review” by selecting “Edit Properties” and changi
 After you updated the status you can see that the path of your contract, which is displayed over the document's name, has changed.
 
 <br />
-
------------------ruleCheck <*missing sub menu*>---------------------------------
 
 ![ruleCheck](../images/contract-management/ruleCheck.gif)
 

@@ -303,8 +303,6 @@ Access the “New” folder, click “Upload” and choose any document you want
 
 <br />
 
------------------uploadFile <*missing sub menu*>---------------------------------
-
 ![uploadFile](../images/contract-management/uploadFile.gif)
 
 <br />
@@ -313,13 +311,11 @@ Once it’s uploaded click on it to open up the document preview and choose “C
 
 <br />
 
------------------changeTypeAndAspects <*missing sub menu*>------------------------
-
 ![changeTypeAndAddAspect](../images/contract-management/changeTypeAndAddAspect.gif)
 
 <br />
 
-If you now go to “Edit Properties” you can fill in all the properties of the Custom Type “Contract” and your chosen Aspect to your specifications.
+If you now go to “Edit Properties” you can fill in all the properties of the Custom Type “Contract” and your chosen Aspect as you see fit.
 
 <br />
 <br />

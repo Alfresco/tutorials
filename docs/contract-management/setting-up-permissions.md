@@ -39,7 +39,7 @@ These are the default permissions shipped in Alfresco Content Services, but thro
 
 ## Managing users and groups
 
-In order to test the different permissions we need to create a few users and groups. In a production environment these users and groups would most likely be controlled externally in a directory such as Active Directory, LDAP or similar. For now we will create them manually.
+In order to test the different permissions you need to create a few users and groups. In a production environment these users and groups would most likely be controlled externally in a directory such as Active Directory, LDAP or similar. For now we will create them manually.
 
 Navigate to “Admin Tools” and click “Groups” in the sidebar, then hit “Browse” and find the little “+” in the upper right corner of the list that follows.
 Give your group an ID and a name (legal, Legal):
