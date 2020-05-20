@@ -1,0 +1,7 @@
+- contract-management:
+    title: "Contract Management"
+    children:
+        - content-model.md: "Content modeling"
+        - setting-up-rules.md: "Setting up rules"
+        - setting-up-permissions.md: "Setting up permissions"
+        - smart-folders.md: "Smart Folders"
