@@ -37,7 +37,7 @@ Before you can use Smart Folders you must tell ACS to enable them, just open the
 
 ## Creating your template
 Now you will need to create a template to use on your site.  
-For that use the editor of your choosing or just download Visual Studio Code. 
+For that use the editor of your choosing or just download [Visual Studio Code](https://code.visualstudio.com/download). 
 You can find the finished template [here](../resources/contract-management/smartFolder.json), but let’s go through it and see what is doing what.  
 First of all a json file, which is the data type any Smart Folder Template is written in, is only allowed to have one object, that’s why the first folder only has a name and no ID or query: It only serves as a container and isn’t displayed on your site.  
 It doesn’t even need the name, but for the sake of understandability let’s leave it in as a form of headline for your template.  
