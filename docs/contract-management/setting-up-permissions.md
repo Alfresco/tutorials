@@ -8,7 +8,7 @@ Contracts can then be automatically organized using rules.
 
 Up to this point any user in your system can enter any folder and change the status of a contract, thereby effectively bypassing all steps to the approval.
 
-Setting up permissions can ensure only the right users can do certain actions.
+Setting up permissions can ensure that only the right users can do certain actions.
 
 <br />
 <br />
@@ -63,7 +63,7 @@ Assign a user to a group by typing in the group you need (Legal) in the “Searc
 
 ## Setting up permissions
 
-Once you have created your groups and populated you are at the point where you can actually set up permissions.
+Once you have created and populated your groups you are at the point where you can actually set up permissions.
  
 Go to your “Document Library” and hover over “Contracts” to expand the “More” menu and select “Manage Permissions”.
 
@@ -105,7 +105,7 @@ If you want a direct comparison, upload another document with this user.
 The same goes for the Contract in the “Review” folder.
 Log out again.
 
-Lastly log in with the user without any group. 
+Lastly log in with the user without any group and join the site. 
 
 Since everyone is still a Contributor in the “Contracts” folder  you are still able to upload contracts. But editing anything inside the subfolders is now off limits to that user.
 
@@ -130,6 +130,7 @@ If you want to know more about permissions, you should have a look at this link:
 
 This is the first tutorial in a series of five. Checkout the tutorials below to to continue your journey:  
 
-- Setting up Rules  
-- Permissions  
-- ..
+- [Getting started with Content Modeling](content-model.md)
+- [Setting up Rules](setting-up-rules.md)  
+- [Smart Folders](smart-folders.md)
+- ...
