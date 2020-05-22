@@ -67,14 +67,6 @@
                             }
                         },
                         {
-                            "id": "214",
-                            "name": "Marketing",
-                            "search": {
-                                "language": "fts-alfresco",
-                                "query": "+ct:department:'Marketing'"
-                            }
-                        },
-                        {
                             "id": "215",
                             "name": "Legal",
                             "search": {

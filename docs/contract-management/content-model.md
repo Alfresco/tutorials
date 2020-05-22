@@ -36,6 +36,14 @@ Once you’re logged in click on “Admin Tools” at the top of the screen, the
 
 Now click “Create Model” and give your model a namespace: For this tutorial let’s use “http://www.example.com”. Also you have to give your Model a name and prefix, type in “Contracts” and “ct” for that.
 
+<br />
+
+![createModel](../images/contract-management/createModel.gif)
+
+<br />
+
+![createModelNaming](../images/contract-management/createModelNaming.png)
+
 After naming your Content Model let’s fill it with a Custom Type and some Aspects.
 
 <br />
@@ -48,13 +56,13 @@ Aspects are also a set of properties, but are not bound to one type. To use the 
 
 <br />
 
-But let’s get back to your Content Model: Click “Create Custom Type” and give it a name and display label like this:
+But let’s get back to your Content Model: Click on the name of your model, select “Create Custom Type” and give it a name and display label like this:
 
 <br />
 
 ![customType](../images/contract-management/costumType.png)
 
-It is good form to use camelCase for name.
+For future reference: It is good form to use camelCase for "name".
 
 <br />
 
@@ -65,6 +73,9 @@ Click on “Create Property” and type in:
 
 <br />
 
+Click "Create and Start Another".
+
+<br />
 
 |  Property       |  Value      |
 |  ---            |  ---        |
@@ -129,7 +140,7 @@ Now that you have the basic properties for every contract, let’s create some m
 
 <br />
 
-Click “Create” and make another one.
+Click “Create” and do another one.
 
 <br />
 
@@ -242,7 +253,7 @@ Head back and click on “vendor” and add the following properties:
 |  Requirement     |  Mandatory       |
 |  Default Value   |  ---             |
 |  Constraint      |  List of Values  |
-|  List of Values  |  Europe<br /> Africa<br /> Asia<br /> South America<br /> North America<br /> Australia                 |
+|  List of Values  |  Europe<br /> Africa<br /> Asia<br /> South America<br /> North America<br /> Australia         |
 
 Tick “Sort Alphanumerically”
 
@@ -267,7 +278,14 @@ Tick “Sort Alphanumerically”
 <br />
 
 Now that you have a working Model let’s give it an interface for filling out your contracts metadata.
-To do that go back to “Custom Types and Aspects” and open the “Actions” dropdown menu in the “contract” line, then click “Layout Designer”.
+To do that go back to “Custom Types and Aspects” and open the “Actions” dropdown menu in the “contract” line, then click “Layout Designer”.  
+
+<br />
+
+![navigateLayoutDesigner](../images/contract-management/navigateLayoutDesigner.gif)
+
+<br />
+
 Here you can find several layout- templates at the top of the screen, just drag and drop any template you like into the “Layout Area” and fill them with the properties you created (also by drag and drop).
 This is how your layout could look like:
 
@@ -285,7 +303,7 @@ Do the same for “employee” and “vendor”.
 Now that your Content Model is complete you can activate it by heading all the way back to “Show Content Models”, opening the “Actions” dropdown menu and clicking “Activate”:
 
 Lastly, let’s test your newly built Model. 
-Open the drop- down menu under “Sites” in the Top- bar and click “Create Site”. Give your site a name like “myCorp” and it will be copied into the “Site ID” as well. Leave everything else as is and hit “Create”.
+Open the drop- down menu under “Sites” in the Top- bar and click “Create Site”. Give your site a name like “myInc” and it will be copied into the “Site ID” as well. Leave everything else as is and hit “Create”.
 
 <br />
 
