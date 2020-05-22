@@ -27,7 +27,8 @@ They do not, however, substitute physical folders as they are only a collection 
 
 ## Enabling Smart Folders
 
-Before you can use Smart Folders you must tell ACS to enable them, just open the docker-compose file and add the following line:
+If you downloaded the 30 days trial you need to tell ACS to enable Smart Folders before you can use them.   
+Just open the docker-compose file and add the following line:
 
 <br />
 
@@ -67,8 +68,6 @@ For that log into ACS as admin and click “Repository” in the nav bar at the 
 
 <br />
 
------------------uploadTemplate <*missing sub menu*>-----------------------------
-
 ![uploadTemplate](../images/contract-management/uploadTemplate.gif)
 
 <br />
@@ -76,10 +75,6 @@ For that log into ACS as admin and click “Repository” in the nav bar at the 
 Next create a new folder in the “Contracts” directory within your site and click “Manage Aspects”.  
 Add “Custom Smart Folder” from the left bar by clicking the “+” sign, then select “Edit Properties” and “All Properties”.  
 Click “Select” under “Smart Folder Template” and again navigate to “Data Dicionary/Smart Folder Templates” and select your template.
-
-<br />
-
-![addSmartFolder](../images/contract-management/addSmartFolder.gif)
 
 <br />
 
@@ -147,3 +142,8 @@ Your test site is almost done now: It uses a Content Model to categorize your do
 Also you established a hierarchy by setting up groups and assigning them different sets of permissions and you gave your site an easy way to access content from anywhere on it with Smart Folders.
 
 The last thing that’s missing is creating a basic ADF Application.
+
+- [Getting started with Content Modeling](content-model.md)
+- [Setting up Rules](setting-up-rules.md)
+- [Permissions](setting-up-permissions.md)
+- ...
