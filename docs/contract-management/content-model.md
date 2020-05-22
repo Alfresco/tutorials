@@ -325,7 +325,7 @@ Access the “New” folder, click “Upload” and choose any document you want
 
 <br />
 
-Once it’s uploaded click on it to open up the document preview and choose “Change Type” on the right. In the drop down menu choose “Contract” and precede by clicking “Manage Aspects”, again on the right side of the screen. Here you actually have a lot more options than the two Aspects you’ve already created, but ignore them for now and either click “employee” or “vendor” then hit “Apply Changes”.
+Once it’s uploaded click on it to open up the document preview and choose “Change Type” on the right. In the drop down menu choose “Contract” and proceed by clicking “Manage Aspects”, again on the right side of the screen. Here you actually have a lot more options than the two Aspects you’ve already created, but ignore them for now and either click “employee” or “vendor” then hit “Apply Changes”.
 
 <br />
 
@@ -358,6 +358,7 @@ If you’re interested in learning more details about Content Modeling we sugges
 
 This is the first tutorial in a series of five. Checkout the tutorials below to to continue your journey:
   
-- Setting up Rules  
-- Permissions  
+- [Setting up Rules](setting-up-rules.md)  
+- [Permissions](setting-up-permissions.md)  
+- [Smart Folders](smart-folders.md)
 - ...
