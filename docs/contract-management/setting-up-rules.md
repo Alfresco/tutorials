@@ -7,7 +7,7 @@ Alfresco Rules and Actions automate a range of content centric actions. This aut
 
 ## Prerequisites
 
-In order to successfully complete this [tutorial](contentModel.md) you will need to have completed the previous tutorial about Content Modeling in order to have a model for Contracts which will be used for the example rules in this tutorial.
+In order to successfully complete this tutorial you will need to have completed the previous tutorial about [Content Modeling](content-model.md) in order to have a model for Contracts which will be used for the example rules in this tutorial.
 
 In order to create rules you will need to login into Alfresco Share as this is currently the only application that enables you to create rules. 
 
@@ -16,7 +16,7 @@ In order to create rules you will need to login into Alfresco Share as this is c
 
 ## Understanding rules
 
-A rule consists of one more triggers, conditions and actions.
+A rule consists of one or more triggers, conditions and actions.
 
 There are three ways to trigger a rule: By uploading, updating or deleting a file or folder.
 
@@ -64,13 +64,13 @@ Make sure to tick “Rule applies to subfolders” to ensure that documents dire
 
 ## Automatically organising contracts
 
-Now that all documents dropped into the “Contracts” folder are specialized as Contracts let’s make rules to manage where Contracts are stored according to their status.
+Now that all documents dropped into the “Contracts” folder are specialized as Contracts let’s create some rules to manage where Contracts are stored according to their status.
 
 This is done by creating three separate rules which apply when a contract is created or updated. The contract is to be moved into the selected folder based on the status property.
 
 These rules are created as follows:
 
-Conditions can include any property you've created, for them to be show up open the dropdown menu "All items" and selcect "Show more".
+Conditions can include any property you've created, to be able to select them, open the dropdown menu "All items" and select "Show more".
 Then click "Types" and "Contract" on the left side and tick the box next to "status" on the right:
 
 <br />
@@ -94,7 +94,7 @@ Then click "Types" and "Contract" on the left side and tick the box next to "sta
 Now every time the status of a contract in any of the subfolders gets updated it is automatically moved to the appropriate folder.
 Even newly uploaded contracts get sorted according to their status. 
 
-After the contract has been approved there is no need for it to still be editable, so let’s edit the "Move to Approved" by selcting it and clicking "Edit" on the right.  
+After the contract has been approved there is no need for it to still be editable, so let’s edit "Move to Approved" by selcting it and clicking "Edit" on the right.  
 Then add an Action just like that:
 
 <br />
@@ -107,7 +107,7 @@ Let’s put your rules to the test.
 
 Upload any document into the “Contracts” and check if it was put into “New” as a Contract. 
 
-If it is stored as a Contract it will have all properties listed on the left side of the screen when you open the document preview.
+If it is stored as a Contract it will have all properties listed on the right side of the screen when you open the document preview.
 
 Now set the Status to “Review” by selecting “Edit Properties” and changing it. Because you declared some properties mandatory you can’t move on without filling them in, thereby ensuring that no Contract enters “Review” without the necessary information.
 
@@ -131,8 +131,7 @@ Rules are a great way to automate a lot of content operations specific to your b
 
 If you’re interested in learning more about rules checkout these resources:
 
-- [Alfresco docs on setting up Rules](https://docs.alfresco.com/6.2/concepts/
-  alfresco-tutorial-10.html)  
+- [Alfresco docs on setting up Rules](https://docs.alfresco.com/6.2/concepts/alfresco-tutorial-10.html)  
   
 - [Summary of actions a rule can perform](https://docs.alfresco.com/6.2/references/rule-actions.html)  
   
@@ -149,7 +148,7 @@ Now that you have a rudimentary rule system in place to manage your contracts, y
 
 This is the second tutorial in a series of five. Checkout the tutorials below to to continue your journey:
 
-- Getting started with Content Modeling  
-- Setting up Rules  
-- Permissions  
-- ..
+- [Getting started with Content Modeling](content-model.md)    
+- [Permissions](setting-up-permissions.md)  
+- [Smart Folders](smart-folders.md)
+- ...
