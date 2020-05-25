@@ -40,11 +40,37 @@ Just open the docker-compose file and add the following line:
 ## Creating your template
 Now you will need to create a template to use on your site.  
 For that use the editor of your choosing or just download [Visual Studio Code](https://code.visualstudio.com/download). 
-You can find the finished template [here](../resources/contract-management/smartFolder.json), but let’s go through it and see what is doing what.  
+You can find the finished template [here](https://github.com/Alfresco/tutorials/blob/master/docs/resources/contract-management/smartFolder.json), but let’s go through it and see what is doing what.
+
 First of all a json file, which is the data type every Smart Folder Template is written in, is only allowed to have one object, that’s why the outer most one only has a name and no ID or query: It only serves as a container and isn’t displayed on your site.  
 It doesn’t even need the name, but for the sake of understandability let’s leave it in as a form of headline for your template.  
 The next interesting tag is “nodes”, every node will be displayed as a subfolder, thus being the core of your template.  
 These nodes use the “search” tag to know what they are looking for. Every “search” tag consists of a “language” and “query” tag. The former specifying how the latter is to be interpreted.  
+
+```
+{
+    "name" : "Smart Folders",
+    "nodes" :[
+        {
+            "id" : "1",
+            "name" : "My Contracts",
+            "search":{
+                "language": "fts-alfresco",
+                "query": "=cm:creator:%CURRENT_USER% AND +TYPE:'ct:contract'"
+            },
+            
+            "nodes" :[
+                {
+                    "id" : "11",
+                    "name" : "Current",
+                    "search" :{
+                        "language" : "fts-alfresco",
+                        "query" : "+ct:draftDate:[NOW/DAY-7DAYS TO TODAY] AND =cm:creator:%CURRENT_USER%"
+                    }
+                },
+            ]
+        }, 
+```
 
 The first node of your template gathers every document, the user you are currently logged in as, has ever uploaded and narrows it down to only contracts. It’s worth noting that “ct” is the prefix you gave your content model way back in the first tutorial.
 
