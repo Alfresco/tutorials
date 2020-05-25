@@ -1,4 +1,4 @@
-# Order by Permissions
+# Setting up permissions
 
 Permissions determine which user can perform what action thereby giving your folder a hierarchy and preventing unwanted changes to your content by unauthorized users.
 

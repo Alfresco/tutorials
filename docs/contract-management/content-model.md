@@ -34,11 +34,9 @@ If you’re running the [download trial](https://www.alfresco.com/platform/conte
 
 Once you’re logged in click on “Admin Tools” at the top of the screen, then find “Model Manager” in the sidebar.
 
-Now click “Create Model” and give your model a namespace: For this tutorial let’s use “http://www.example.com”. Also you have to give your Model a name and prefix, type in “Contracts” and “ct” for that.
-
-<br />
-
 ![createModel](../images/contract-management/createModel.gif)
+
+Now click “Create Model” and give your model a namespace: For this tutorial let’s use “http://www.example.com”. Also you have to give your Model a name and prefix, type in “Contracts” and “ct” for that.
 
 <br />
 
