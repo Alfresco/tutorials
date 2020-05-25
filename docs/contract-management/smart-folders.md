@@ -124,7 +124,6 @@ Let’s see if everything works as it should. Check the folder you just created,
 │       ├── HR
 │       ├── IT
 │       ├── Legal
-│       ├── Marketing
 │       └── Sales
 ├── My_Contracts
 │   ├── Current
