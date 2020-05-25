@@ -72,6 +72,8 @@ These nodes use the “search” tag to know what they are looking for. Every �
         }, 
 ```
 
+***Note: The JSON above is only a subset of the full template. [Download the full template here](https://github.com/Alfresco/tutorials/blob/master/docs/resources/contract-management/smartFolder.json)***
+
 The first node of your template gathers every document, the user you are currently logged in as, has ever uploaded and narrows it down to only contracts. It’s worth noting that “ct” is the prefix you gave your content model way back in the first tutorial.
 
 So this subfolder will hold every contract you ever uploaded, no matter its status but what if you only want to see the most recent and probably most relevant ones?  
