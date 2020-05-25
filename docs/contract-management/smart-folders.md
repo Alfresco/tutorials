@@ -147,15 +147,12 @@ Lastly look into the folders for the two departments you chose on your employee 
 
 With Smart Folders you are now able to navigate your site much quicker. If you want to expand on the already existing structure or learn more you should check out these links:
 
-- [Video Tutorials](https://docs.alfresco.com/5.1/topics/smart-video-tutorials.html)
-  
-- [Template syntax](https://docs.alfresco.com/5.1/concepts/sf-ref-template-guidance.html)
-  
+- [Video Tutorials](https://docs.alfresco.com/6.2/topics/smart-video-tutorials.html)
+- [Configuring Smart Folders](https://docs.alfresco.com/6.2/concepts/sf-intro.html)
+- [Template syntax](https://docs.alfresco.com/6.2/concepts/sf-ref-template-guidance.html)
 - [AFT Search Commands](https://docs.alfresco.com/search-enterprise/concepts/searchsyntax-intro.html)
-  
 - [Alfresco UIniversity course on Smart Folders](https://university.alfresco.com/acs-share-smart-folders)
-  
-- [FAQs](https://docs.alfresco.com/5.1/references/sf-tech-faqs.html)
+- [FAQs](https://docs.alfresco.com/6.2/references/sf-tech-faqs.html)
 
 <br />
 

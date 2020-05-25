@@ -132,11 +132,8 @@ Rules are a great way to automate a lot of content operations specific to your b
 If you’re interested in learning more about rules checkout these resources:
 
 - [Alfresco docs on setting up Rules](https://docs.alfresco.com/6.2/concepts/alfresco-tutorial-10.html)  
-  
 - [Summary of actions a rule can perform](https://docs.alfresco.com/6.2/references/rule-actions.html)  
-  
 - [Working with a set of rules](https://docs.alfresco.com/6.2/concepts/library-folder-rules-defined.html)  
-  
 - [Linking to an existing rule set](https://docs.alfresco.com/6.2/tasks/library-folder-rules-define-link.html)
 
   <br />

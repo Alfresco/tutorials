@@ -344,9 +344,7 @@ Also your Model is able to further narrow down the scope of your Contract by pro
 If you’re interested in learning more details about Content Modeling we suggest the following resources: 
 
 - [Content Modeling developer guide](https://docs.alfresco.com/6.2/concepts/content-modeling-about.html)
-    
-- [Video: Alfresco ArchiTech Talks - Content Modeling](https://www.alfresco.com/explore-digital-business-platform#wistiavideo-1-9)   
-  
+- [Video: Alfresco ArchiTech Talks - Content Modeling](https://www.alfresco.com/explore-digital-business-platform#wistiavideo-1-9)
 - [Video: Create models with Model Manager](https://docs.alfresco.com/6.2/concepts/alfresco-tutorial-24.html)
 
 <br />
