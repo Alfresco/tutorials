@@ -17,11 +17,9 @@ Next you’ll be asked for your login information. They are the same you used fo
 Username: activation mail address  
 Password: password you chose.
 
-After you entered those you can give your account a name to go by. Let’s use “Administrator” here.
-
 <br />
 
-![accountName](../images/contract-management/accountName.png)
+![logIn](../images/contract-management/login.png)
 
 <br />
 
@@ -33,11 +31,13 @@ Next you will see your hub from where you can manage your account and access you
 
 <br />
 
-If you want to log in as one of the other users just click on your username and select “Manage accounts…” then “Add an account”.
+Now you can navigate your site just like in the browser. In the screenshot below you can see the "Emplyee Contracts/By Department/IT" smartfolder you created in the last tutorial with some example documents.
 
 <br />
 
-![changeUser](../images/contract-management/changeUser.png)
+![itFolder](../images/contract-management/itFolder.png)
+
+<br />
 
 Again use the address of your ACS trial then use the same login information you created in the “Permission” tutorial.
 
