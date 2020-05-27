@@ -1,6 +1,6 @@
 # Connecting your trial to your phone
 
-Now that you have a functional site up and running let’s connect it to the ACS mobile app.  
+Now that you have a functional site up and running let’s connect your trial to the ACS mobile app.  
 ACS supports both [Android](https://play.google.com/store/apps/details?id=org.alfresco.mobile.android.application) and iOS.
 
 After you installed and opened the app you’ll have to enter the address you want to connect to, in this case your online trial account.
@@ -39,7 +39,7 @@ If you want to log in as one of the other users just click on your username and 
 
 ![changeUser](../images/contract-management/changeUser.png)
 
-Use the same login information you created in the “Permission” tutorial.
+Again use the address of your ACS trial then use the same login information you created in the “Permission” tutorial.
 
-If you are using the 30 days download trial your ACS instance you can access it via the IP- address of your PC inside your WiFi- network on port 8080.  
-Note that your cell phone has to be inside the same network for the connection to work.
+If you are using the 30 days download trial of ACS you can connect to it via the IP- address of your PC inside your WiFi- network on port 8080.  
+Note that your cell phone has to be logged into the same network for the connection to work.
