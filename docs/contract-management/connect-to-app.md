@@ -31,15 +31,13 @@ Next you will see your hub from where you can manage your account and access you
 
 <br />
 
-Now you can navigate your site just like in the browser. In the screenshot below you can see the "Emplyee Contracts/By Department/IT" smartfolder you created in the last tutorial with some example documents.
+Now you can navigate your site just like in the browser. In the screenshot below you can see the "Employee Contracts/By Department/IT" smartfolder you created in the last tutorial with some example documents.
 
 <br />
 
 ![itFolder](../images/contract-management/itFolder.png)
 
 <br />
-
-Again use the address of your ACS trial then use the same login information you created in the “Permission” tutorial.
 
 If you are using the 30 days download trial of ACS you can connect to it via the IP- address of your PC inside your WiFi- network on port 8080.  
 Note that your cell phone has to be logged into the same network for the connection to work.
