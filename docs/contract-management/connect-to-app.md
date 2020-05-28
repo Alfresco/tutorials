@@ -1,6 +1,6 @@
 # Connecting your trial to your phone
 
-Now that you have a functional site up and running let’s connect your trial to the ACS mobile app.  
+Now that you have a functional site up and running, let’s connect your trial to the ACS mobile app.  
 ACS supports both [Android](https://play.google.com/store/apps/details?id=org.alfresco.mobile.android.application) and iOS.
 
 After you installed and opened the app you’ll have to enter the address you want to connect to, in this case your online trial account.
@@ -23,7 +23,7 @@ Password: password you chose.
 
 <br />
 
-Next you will see your hub from where you can manage your account and access your site under “Sites”.
+Once logged in you will see your hub from where you can manage your account and access your site under “Sites”.
 
 <br />
 
@@ -31,7 +31,7 @@ Next you will see your hub from where you can manage your account and access you
 
 <br />
 
-Now you can navigate your site just like in the browser. In the screenshot below you can see the "Employee Contracts/By Department/IT" smartfolder you created in the last tutorial with some example documents.
+Now you can navigate your site just like in the browser. In the screenshot below there's the "Employee Contracts/By Department/IT" smartfolder you created in the last tutorial with some example documents.
 
 <br />
 
@@ -39,5 +39,7 @@ Now you can navigate your site just like in the browser. In the screenshot below
 
 <br />
 
-If you are using the 30 days download trial of ACS you can connect to it via the IP- address of your PC inside your WiFi- network on port 8080.  
+If you are using the 30 days download trial of ACS you can connect to it via the IP- address of your PC inside your WiFi- network on port 8080.
+The fastest way of determining your local IP- Address is visiting localhost:8080 and navigate to Share. The URL will automatically change to "your.ip.adress:8080/share/page".
+
 Note that your cell phone has to be logged into the same network for the connection to work.
