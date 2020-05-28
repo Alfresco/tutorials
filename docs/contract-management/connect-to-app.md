@@ -40,6 +40,5 @@ Now you can navigate your site just like in the browser. In the screenshot below
 <br />
 
 If you are using the 30 days download trial of ACS you can connect to it via the IP- address of your PC inside your WiFi- network on port 8080.
-The fastest way of determining your local IP- Address is visiting localhost:8080 and navigate to Share. The URL will automatically change to "your.ip.adress:8080/share/page".
 
 Note that your cell phone has to be logged into the same network for the connection to work.
