@@ -354,6 +354,7 @@ If you’re interested in learning more details about Content Modeling we sugges
 
 This is the first tutorial in a series of five. Checkout the tutorials below to to continue your journey:
   
+- **Getting started with Content Modeling**
 - [Setting up Rules](setting-up-rules.md)  
 - [Permissions](setting-up-permissions.md)  
 - [Smart Folders](smart-folders.md)

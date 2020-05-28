@@ -131,6 +131,7 @@ If you want to know more about permissions, you should have a look at this link:
 This is the first tutorial in a series of five. Checkout the tutorials below to to continue your journey:  
 
 - [Getting started with Content Modeling](content-model.md)
-- [Setting up Rules](setting-up-rules.md)  
+- [Setting up Rules](setting-up-rules.md)
+- **Permissions**  
 - [Smart Folders](smart-folders.md)
 - [Connect tp Application](connect-to-app.md)

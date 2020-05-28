@@ -170,4 +170,5 @@ The last thing that’s missing is creating a basic ADF Application.
 - [Getting started with Content Modeling](content-model.md)
 - [Setting up Rules](setting-up-rules.md)
 - [Permissions](setting-up-permissions.md)
+- **Smart Folders**
 - [Connect to Application](connect-to-app.md)

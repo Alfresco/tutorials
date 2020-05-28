@@ -87,3 +87,4 @@ Your are all set up and braced now for what ACS has to offer but if you want to 
 - [Setting up Rules](setting-up-rules.md)
 - [Permissions](setting-up-permissions.md)
 - [Smart Folders](smart-folders.md)
+- **Connect to Application**
