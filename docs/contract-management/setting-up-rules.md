@@ -148,4 +148,4 @@ This is the second tutorial in a series of five. Checkout the tutorials below to
 - [Getting started with Content Modeling](content-model.md)    
 - [Permissions](setting-up-permissions.md)  
 - [Smart Folders](smart-folders.md)
-- ...
+- [Connect to Application](connect-to-app.md)
