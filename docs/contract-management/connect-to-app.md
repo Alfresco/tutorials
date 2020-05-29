@@ -50,7 +50,7 @@ Now you can navigate your site just like in the browser. In the screenshot below
 
 ## Setting up on iOS
 
-After you install the app you'll be asked login. Here you need to enter the URL for your trial - see instructions at the top of this document. 
+After you install the app you'll be asked to login. Here you need to enter the URL for your trial - see instructions at the top of this document. 
 
 ![iOSConnect](../images/contract-management/connectAccountiOS.jpg)
 
