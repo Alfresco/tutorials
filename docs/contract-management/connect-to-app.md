@@ -4,9 +4,11 @@ Now that you have a functional site up and running, let’s connect your trial t
 
 Alfresco offers native mobile applications for both [Android](https://play.google.com/store/apps/details?id=org.alfresco.mobile.android.application) and [iOS](https://apps.apple.com/us/app/alfresco-content-services/id459242610).
 
-<br />
-<br />
+In addition to installing the application you will ned the URL for your Alfresco Content Services instance. 
 
+You can find your URL in the first email with the login information or you can find it by opening the login screen of ACS and copying the part until “alfresco.com”.
+<br />
+<br />
 ## Setting up on Android
 
 After you installed and opened the app you’ll have to enter the address you want to connect to, in this case your online trial account.
@@ -17,7 +19,7 @@ After you installed and opened the app you’ll have to enter the address you wa
 
 <br />
 
-The address above is only an example as every trial has a unique URL. You can find your URL in the first email with the login information or you can find it by opening the login screen of your trial and copying the part until “alfresco.com”, paste it into the app and add “/alfresco”. Make sure to not add a second “/” after “alfresco” as the application won’t recognize the address like this.
+The address above is only an example. Enter the URL to ACS and add “/alfresco”. Make sure to not add a second “/” after “alfresco” as the application won’t recognize the address like this.
 
 Next you’ll be asked for your login information. They are the same you used for your trial:  
 Username: activation mail address  
@@ -48,10 +50,20 @@ Now you can navigate your site just like in the browser. In the screenshot below
 
 ## Setting up on iOS
 
-***
+After you install the app you'll be asked login. Here you need to enter the URL for your trial - see instructions at the top of this document. 
+
+![iOSConnect](../images/contract-management/connectAccountiOS.jpg)
 
 <br />
+
+Click "Next" in the top right corner and now you will have to enter your username and password.
+
+![iOSLogin](../images/contract-management/iOSLogin.jpg)
 <br />
+<br />
+Once you're logged in you can now browse around and manage your content directly from your phone.
+
+![iOSBrowse](../images/contract-management/iosBrowse.jpg)
 
 ## Connecting the mobile app to your download trial
 
