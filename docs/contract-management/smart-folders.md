@@ -158,17 +158,21 @@ With Smart Folders you are now able to navigate your site much quicker. If you w
 By the way, if you want to expand on the template you created in this tutorial you can update it in ACS by selecting it in “Repository/Data Dictionary/Smart Folder Templates” and clicking “Upload New Version”.
 
 <br />
+
+![uploadNewVersion](../images/contract-management/uploadNewVersion.gif)
+
+<br />
 <br />
 
 ## Next Steps
 
-Your test site is almost done now: It uses a Content Model to categorize your documents as contracts and automatically organizes them using rules.  
+Your test site is basically done now: It uses a Content Model to categorize your documents as contracts and automatically organizes them using rules.  
 Also you established a hierarchy by setting up groups and assigning them different sets of permissions and you gave your site an easy way to access content from anywhere on it with Smart Folders.
 
-The last thing that’s missing is creating a basic ADF Application.
+The only thing left to do is connecting your trial to the mobile application of ACS. For that checkout thelast tutorial in this series:
 
 - [Getting started with Content Modeling](content-model.md)
 - [Setting up Rules](setting-up-rules.md)
 - [Permissions](setting-up-permissions.md)
 - **Smart Folders**
-- [Connect to Application](connect-to-app.md)
+- [Connect mobile app to Alfresco](connect-to-app.md)

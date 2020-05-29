@@ -17,7 +17,7 @@ After you installed and opened the app you’ll have to enter the address you wa
 
 <br />
 
-The address above is only an example as every trial has a unique URL. You can find your URL in the first email with login information or you can find it by opening the login screen of your trial and copying the part until “alfresco.com”, paste it into the app and add “/alfresco”. Make sure to not add a second “/” after “alfresco” as the application won’t recognize the address like this.
+The address above is only an example as every trial has a unique URL. You can find your URL in the first email with the login information or you can find it by opening the login screen of your trial and copying the part until “alfresco.com”, paste it into the app and add “/alfresco”. Make sure to not add a second “/” after “alfresco” as the application won’t recognize the address like this.
 
 Next you’ll be asked for your login information. They are the same you used for your trial:  
 Username: activation mail address  
@@ -87,4 +87,4 @@ Your are all set up and braced now for what ACS has to offer but if you want to 
 - [Setting up Rules](setting-up-rules.md)
 - [Permissions](setting-up-permissions.md)
 - [Smart Folders](smart-folders.md)
-- **Connect to Application**
+- **Connect mobile app to Alfresco**

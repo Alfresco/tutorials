@@ -358,4 +358,4 @@ This is the first tutorial in a series of five. Checkout the tutorials below to 
 - [Setting up Rules](setting-up-rules.md)  
 - [Permissions](setting-up-permissions.md)  
 - [Smart Folders](smart-folders.md)
-- [Connect to Application](connect-to-app.md)
+- [Connect mobile app to Alfresco](connect-to-app.md)

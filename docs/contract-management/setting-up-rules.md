@@ -1,6 +1,6 @@
 # Setting up Rules
 
-Alfresco Rules and Actions automate a range of content centric actions. This automation removes the need for users to perform repeatable tasks and ensures that tasks are carried out in a timely manner, with consistency and efficiently. Think of Rules and Actions as a “If This That Then” tool for Content Management.  
+Alfresco Rules and Actions automate a range of content centric actions. This automation removes the need for users to perform repeatable tasks and ensures that tasks are carried out in a timely manner, with consistency and efficiently. Think of Rules and Actions as a “If This Then That” tool for Content Management.  
 
 <br />
 <br />
@@ -39,7 +39,7 @@ In the previous tutorial you created a site containing a “Contracts” folder 
 As it is now, you would have to do everything manually from declaring a document a “Contract” to moving it from subfolder to subfolder according to its status.
 
 All that can be automated by setting up a few rules.
-To do so head to the site you created and open the “Document Library”. Hover over your Contracts folder, expand “More” on the right and click “Manage Rules”. 
+To do so head to the site you created and open the “Document Library”. Hover over your Contracts folder, expand “More” on the right and click “Manage Rules”, then select "Create Rule". 
 
 <br />
 
@@ -62,7 +62,7 @@ Make sure to tick “Rule applies to subfolders” to ensure that documents dire
 <br />
 <br />
 
-## Automatically organising contracts
+## Automatically organizing contracts
 
 Now that all documents dropped into the “Contracts” folder are specialized as Contracts let’s create some rules to manage where Contracts are stored according to their status.
 
@@ -94,7 +94,7 @@ Then click "Types" and "Contract" on the left side and tick the box next to "sta
 Now every time the status of a contract in any of the subfolders gets updated it is automatically moved to the appropriate folder.
 Even newly uploaded contracts get sorted according to their status. 
 
-After the contract has been approved there is no need for it to still be editable, so let’s edit "Move to Approved" by selcting it and clicking "Edit" on the right.  
+After the contract has been approved there is no need for it to still be editable, so let’s edit "Move to Approved" by selecting it and clicking "Edit" on the right.  
 Then add an Action just like that:
 
 <br />
@@ -105,7 +105,7 @@ Then add an Action just like that:
 
 Let’s put your rules to the test.
 
-Upload any document into the “Contracts” and check if it was put into “New” as a Contract. 
+Upload any document into the “Contracts” folder and check if it was put into “New” as a Contract. 
 
 If it is stored as a Contract it will have all properties listed on the right side of the screen when you open the document preview.
 
@@ -143,10 +143,10 @@ If you’re interested in learning more about rules checkout these resources:
 
 Now that you have a rudimentary rule system in place to manage your contracts, you can move on by setting up permissions so only specific users can access certain folders.
 
-This is the second tutorial in a series of five. Checkout the tutorials below to to continue your journey:
+This is the second tutorial in a series of five. Checkout the tutorials below to continue your journey:
 
 - [Getting started with Content Modeling](content-model.md)
 - **Setting up Rules**    
 - [Permissions](setting-up-permissions.md)  
 - [Smart Folders](smart-folders.md)
-- [Connect to Application](connect-to-app.md)
+- [Connect mobile app to Alfresco](connect-to-app.md)

@@ -50,7 +50,7 @@ Give your group an ID and a name (legal, Legal):
 
 <br />
 
-Now that you have a group let’s fill it with some users, for that just change to “Users” in the side bar and select “New User”. How you name your users doesn’t matter, just make sure to create at least three of them: two in “Legal” and the other one without any group.
+Now that you have a group let’s fill it with some users, for that just change to “Users” in the sidebar and select “New User”. How you name your users doesn’t matter, just make sure to create at least three of them: two in “Legal” and the other one without any group.
 
 Assign a user to a group by typing in the group you need (Legal) in the “Search” field at the bottom and selecting it in the result window.
 
@@ -128,10 +128,10 @@ If you want to know more about permissions, you should have a look at this link:
 
 ## Next Steps
 
-This is the first tutorial in a series of five. Checkout the tutorials below to to continue your journey:  
+This is the third tutorial in a series of five. Checkout the tutorials below to to continue your journey:  
 
 - [Getting started with Content Modeling](content-model.md)
 - [Setting up Rules](setting-up-rules.md)
 - **Permissions**  
 - [Smart Folders](smart-folders.md)
-- [Connect tp Application](connect-to-app.md)
+- [Connect mobile app to Alfresco](connect-to-app.md)
