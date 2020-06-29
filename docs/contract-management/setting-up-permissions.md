@@ -67,7 +67,7 @@ Once you have created and populated your groups you are at the point where you c
  
 Go to your “Document Library” and hover over “Contracts” to expand the “More” menu and select “Manage Permissions”.
 
-As it is now, “Share” created groups, which have the same role throughout the whole “Contracts” folder. That doesn’t make much practical sense so deselect “Inherit Permissions” then hit “Add User/ Group” and search for “Everyone” and select it.
+As it is now, it has all the default permissions assigned by the site, which have the same role throughout the whole “Contracts” folder. That doesn’t make much practical sense so deselect “Inherit Permissions” then hit “Add User/ Group” and search for “Everyone” and select it.
 
 Now change the role to “Contributor”.
 
@@ -77,10 +77,9 @@ Now change the role to “Contributor”.
 
 <br />
 
-Now everybody can upload a new contract, but also just send it through review and approve it themselves.
+Now everybody can upload a new contract, but also just send it through review and approve it themselves. In order to prevent this behaviour you have to update the permissions for the “New” folder. 
 
-To prevent that you have to update the permissions for the “New” folder. 
-Since “Share” prioritizes inherited permissions over local ones, deselect “Inherit Permissions” and make Legal a Collaborator and demote Everyone to Consumer.
+Since Alfresco Content Services prioritizes inherited permissions over local ones, deselect “Inherit Permissions” and make Legal a Collaborator and demote Everyone to Consumer.
 
 Do the same for the “Review” folder.
 

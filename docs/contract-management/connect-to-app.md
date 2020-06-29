@@ -9,6 +9,7 @@ In addition to installing the application you will ned the URL for your Alfresco
 You can find your URL in the first email with the login information or you can find it by opening the login screen of ACS and copying the part until “alfresco.com”.
 <br />
 <br />
+
 ## Setting up on Android
 
 After you installed and opened the app you’ll have to enter the address you want to connect to, in this case your online trial account.
