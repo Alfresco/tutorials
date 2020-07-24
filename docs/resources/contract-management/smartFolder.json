@@ -47,7 +47,7 @@
                             "name": "IT",
                             "search": {
                                 "language": "fts-alfresco",
-                                "query": "+mi:department:'IT'"
+                                "query": "+ct:department:'IT'"
                             }
                         },
                         {
