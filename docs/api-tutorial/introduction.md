@@ -23,7 +23,7 @@ Everything else will be taken care of by Postman.
 
 Also you will need this collection of pre-made requests to spare you from creating them yourself. 
 
-[![this](https://run.pstmn.io/button.svg)](https://www.getpostman.com/run-collection/bfc6b4dd5f3ec21ddb8d)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/run-collection/bfc6b4dd5f3ec21ddb8d)
 
 
 While this introduction will explain all the parts of these requests, feel free to experiment with them and get a feel of what happens when you change certain parameters. 
