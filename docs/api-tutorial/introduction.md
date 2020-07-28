@@ -129,12 +129,17 @@ It could have three values:
 
 Currently the status of the contract you created is set to “New”, let’s set it to “Review”.
 
-To change the status you will send a json body with the properties you want to change. It is important to give the full and exact path to your property. In this case it would be “properties -> status”.
+To change the status you will send a json body with the properties you want to change. It is important to give the full and exact path to your property. 
 If you are unsure where a property is stored you can execute the last  request and look it up in the response body:
 
 ![changeStatus](../images/introduction/changeStatus.png)
 
-In the “Update Contract” request the body is already filled out with the correct path(1) and if you execute it your response body(2) will look like this:
+In this case it would be “properties -> status”.  
+Also let’s add the “Employee” aspect to your folder.
+As an aspect is basically nothing more than a property of a node we can put it in the request body with the “Status” update as well.
+Every aspect of a node is stored in an array called “aspectNames”, so all you have to do is update that array(2).
+Now that you know what your request body is made of, let’s have a look at it and the returned response body, where you can find your updated properties: 
+
 
 ![updateContractBody](../images/introduction/updateContractBody.png)
 
