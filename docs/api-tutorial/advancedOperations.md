@@ -98,15 +98,26 @@ You’ll get an empty “entries” array like so:
 ![emptyCommentList](../images/introduction/emptyCommentList.png)
 
 
-## Queries
+## Searching Contracts
 
 Lastly let’s take a look at the search API of Alfresco, it has loads of customizable aspects to make the search for content as various as possible, but we will only cover the very basics here. If you want to know more about the search API, click [here](https://api-explorer.alfresco.com/api-explorer/#!/search/search).
 
-Now recreate your contract with the “Create Contract” request so that you can search for it in the next step.
+Let’s create another sample contract to work with. This one will concern a fictional employee of myInc, called John Doe.
+We establish this connection by adding the “Employee” aspect to our contract and assigning “John Doe” to  “ct:employeeName” with the “Create Employee Contract” request.
 
-The last request will return your newly created contract as it looks for every node having the type “ct:contract” and narrowing it further down to the name of “sample.txt”.
+![createEmployeeContractRequest](../images/introduction/createEmployeeContractRequest.png)
+
+![createEmployeeContractsResponse](../images/introduction/createEmployeeResponse.png)
+
+The “Search for Employee Contract” request will return your newly created contract as it looks for every node having the type “ct:contract” and narrowing it further down to the name of the employee it concerns.
+Also it will cut certain fields from the response body so that only the ID, name and node type of the contract are left as well as its properties.
+As id, name and node type are already included in the response body of a search request they can be put into the “fields” field, which chucks everything from the response except for the elements contained within it.
+Properties on the other hand are not returned by default so we have to tell ACS to send them along with the “include” field.
 It is very important to note that while you are GETting a specific node (or list of nodes if your search parameters are broader) the request you send is of the type POST.
 
+![searchContractRequest](../images/introduction/searchContractRequest.png)
+
+![searchContractResponse](../images/introduction/searchContractResponse.png)
 
 ## Summary
 
