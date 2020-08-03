@@ -17,7 +17,7 @@ A quick word on Postman if you never used it before: It basically builds a reque
 So you only need to worry about three things: 
 - What kind of request do you want to send
 - Where do you want to send it
-- What it contains (i.e. files, properties, parameters)
+- What does it contain (i.e. files, properties, parameters)
 
 Everything else will be taken care of by Postman.
 
@@ -27,6 +27,19 @@ Also you will need this collection of pre-made requests to spare you from creati
 
 
 While this introduction will explain all the parts of these requests, feel free to experiment with them and get a feel of what happens when you change certain parameters. 
+
+
+## What is an API
+You can picture an API (Application Programming Interface) as the middleman between the client software - in this case Postman - and the provider - here ACS.
+It takes the request of the client and translates it so the provider knows what to do, then relays the answer of the provider back to the client.
+
+The way Alfresco API URL’s are built is very straightforward: They all use the same root (http://address:andPortOfYourAcsInstance/alfresco/api/-default-//public/alfresco/versions/1/).
+From here on in it works its way down from the top- level, like nodes, people or sites, over the instance- id to the property of the instance you want to edit or view. 
+
+So if you wanted to GET every child of a folder, you’d call:  
+/nodes/{folderId}/children
+
+ACS provides API’s for a lot of operations, if you want to get an overview and familiarize yourself with the URL structure click [here](https://api-explorer.alfresco.com/api-explorer/#/).
   
 
 ## Requests
@@ -50,29 +63,20 @@ And finally the DELETE request does pretty much what you’d expect: It deletes 
 Note that the Postman collection uses the Administrator credentials to execute all operations so it won’t be hindered by the permission restrictions that might have been set up in the Contract Management series.
 
 
-## What is an API
-You can picture an API (Application Programming Interface) as the middleman between the client software - in this case Postman - and the provider - here ACS.
-It takes the request of the client and translates it so the provider knows what to do, then relays the answer of the provider back to the client.
-
-The way Alfresco API URL’s are built is very straightforward: They all use the same root (http://address:andPortOfYourAcsInstance/alfresco/api/-default-//public/alfresco/versions/1/).
-From here on in it works its way down from the top- level, like nodes, people or sites, over the instance- id to the property of the instance you want to edit or view. 
-
-So if you wanted to GET every child of a folder, you’d call:  
-/nodes/{folderId}/children
-
-ACS provides API’s for a lot of operations, if you want to get an overview and familiarize yourself with the URL structure click [here](https://api-explorer.alfresco.com/api-explorer/#/).
-
-
 ## Creating a contract
 If you finished our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series you will already have created a site called “myInc” and a “Contracts” folder within it.
 Now let’s tell ACS to create another contract inside it.
 To do so you need to give the Alfresco API the appropriate node ID so it knows where the newly created content is supposed to go. 
-To get the ID of the Contracts folder use the first command of the collection.The basic API /nodes/-root-/children (1) will return every child node of your root directory. The “relativePath” parameter (2) will shift that directory to the “Document Library” of your site.
-Now that you have the Contracts- folder, the Test- section of the request is going to drill down to the id property of it and assign it to a global variable to be used later on.
+To get the ID of the Contracts folder use the first command of the collection.The basic API /nodes/-root-/children (1) will return every child node of your root directory. The “relativePath” parameter (2) will shift that directory to the “Contracts” folder of your site.
+And lastly "includeSource"(3) will list the parent folder, "Contracts", in the response.
+Actually the "source" part is all we need, as the line in the "Test"(4) tab will grab it's ID and assign it to a global variable called "folderId".
 
 ![getIdTest](../images/introduction/getIdTest.png)
 
-If everything went well the response body(3) should look like this:
+![getFolderIdBody](../images/introduction/getFolderIdBody.png)
+
+For the sake of brevity the entry- segment, which contains the children of the "Contracts" folder, is collapsed here.
+The important part of the respnose is the source aka the parent folder(5):
 
 ![getFolderId](../images/introduction/getFolderId.png)
 
@@ -90,7 +94,7 @@ If not you can check whether the collection indeed uses admin/admin by clicking 
 After retrieving and saving the ID of the Contracts- folder you can now create a new Contract within it.
 For that use the second request of the collection.
 Here Postman will send a POST(1) request to the /nodes API using the id variable(2) you created in the last request. In the request body(3) there will only be a name and the type you want your file to have (ct:contract)(4). Note that the body is written in JSON(5).
-If you wanted to create a more generic document you could use cm:content or cm:folder if you want to create a folder.
+If you wanted to create a more generic document you could use cm:content or cm:folder to create a folder.
 In the test section we will again create a variable for the contract, so we can use it in the next chapters.
 
 ![createContractBody](../images/introduction/createContractBody.png)
@@ -116,6 +120,9 @@ Now let’s check if everything worked as it should have! Log into Share as Admi
 If everything has gone to plan there should be the contract you just created or uploaded.
 
 ![newContract](../images/introduction/newContract.png)
+
+If you want to view your contract at any point use the fourth request which will return the node belonging to the ID the {contractId} is currently assigned to.
+The response body will look exactly as the one above with the notable difference that you didn't first create the contract but merely called for an existing one.
 
 
 ## Update a contract
