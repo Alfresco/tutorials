@@ -11,6 +11,7 @@ It will serve as a introduction to the terminology as well as cover the most bas
 ## Prerequisites
 
 The following examples will be building on the [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) tutorials, so be sure to check them out before continuing. 
+This guide also depends on having downloaded and insatlled [Postman](https://www.postman.com/downloads/).
 
 A quick word on Postman if you never used it before: It basically builds a request out of parameters you provide.
 So you only need to worry about three things: 
@@ -97,7 +98,7 @@ Should Postman be correctly configured try and change your password to admin in 
 Note that in the example below the password isn't changed, both old and new are "admin".
 
 After retrieving and saving the ID of the Contracts- folder you can now create a new Contract within it.  
-For that use the second request of the collection.
+For that use the second request of the collection.  
 Here Postman will send a POST(1) request to the /nodes API using the folderId variable(2) you created in the last request. In the request body(3) there will only be a name and the type you want your file to have (ct:contract)(4). Note that the body is written in JSON(5).  
 If you wanted to create a more generic document you could use cm:content as th type or cm:folder to create a folder.  
 In the test section we will again create a variable for the contractId, so we can use it in the next chapters.
@@ -116,7 +117,7 @@ If you try to use a non existing prefix you will also get a 400 error code, this
 
 ![invalidPrefix](../images/introduction/invalidPrefix.png)
 
-If you already have a contract you want to upload you can use the same API, only this time instead of sending a json body you will attach the existing contract to your request by using the “form-data” body(1) (Request 3).  
+If you already have a contract you want to upload you can use the same API, only this time instead of sending a JSON body you will attach the existing contract to your request by using the “form-data” body(1) (Request 3).    
 Select the file you want to upload as value for the “filedata”- key(2).
 
 ![uploadContract](../images/introduction/uploadContract.png)
@@ -126,7 +127,7 @@ If everything has gone to plan there should be the contract you just created or 
 
 ![newContract](../images/introduction/newContract.png)
 
-If you want to view your contract at any point use the fourth request which will return the node belonging to the ID the {contractId} variable is currently assigned to.  
+If you want to view your contract at any point use the fourth request which will return the node belonging to the {contractId} variable.  
 The response body will look exactly like the one for creating a contract with the notable difference that it contains an already existing one instead of the node you just created.
 
 
@@ -141,14 +142,14 @@ It could have three values:
 
 Currently the status of the contract you created is set to “New”, let’s set it to “Review”.
 
-To change the status you will send a json body with the properties you want to change. It is important to give the full and exact path to your property. 
+To change the status you will send a JSON body with the properties you want to change. It is important to give the full and exact path to your property.  
 If you are unsure where a property is stored you can execute the last  request and look it up in the response body:
 
 ![changeStatus](../images/introduction/changeStatus.png)
 
 In this case it would be “properties -> status”.  
-Also let’s add the “Employee” aspect to your folder.
-As an aspect is basically nothing more than a property of a node we can put it in the request body with the “Status” update as well.
+Also let’s add the “Employee” aspect to your folder.  
+As an aspect is basically nothing more than a property of a node we can put it in the request body with the “Status” update as well.  
 Every aspect of a node is stored in an array called “aspectNames”, so all you have to do is update that array(2).
 Now that you know what your request body is made of, let’s have a look at it and the returned response body, where you can find your updated properties: 
 
