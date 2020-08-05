@@ -38,14 +38,14 @@ Let's have a look at the action you are about to use.
 To do that you need to send a send GET request to the action-definitions/{actionId} API, coincidentally the third request of the collection does just that.
 The Id-ing of actions is much more intuitive compared to files and folders as they are identical to their name only written in all lowercase letters.
 
-![actionDef](../images/introduction/actionDef.png)
+![actionDef](../images/api-tutorial/actionDef.png)
 
 Okay, let’s go through the action bit by bit: The first part is an array telling you which node types the action is applicable on. If the array is empty, as is the case here, you can apply the action to any type.
 Next we have “parameterDefinitions”, an array, the entries of which are the parameters you have to send if you want to execute this action. "Add-features" has only one - “aspect-name” - the name of the parameter is the string you will use to specify it in the body of your execution request. The entry also tells you which type the parameter has to be of and if it is mandatory to successfully execute the action. 
 
 Now it's time to add an aspect to your contract, so go ahead and run request #4, which will ping the /action-executions API with the name of the action, the ID of the concerned contract and the name of the aspect you want to add, in this case "ct:employee".
 
-![addFeatureAction](../images/introduction/addFeatureAction.png)
+![addFeatureAction](../images/api-tutorial/addFeatureAction.png)
 
 In the response body you can see the unique ID of the action you have just performed. 
 
@@ -65,33 +65,33 @@ Let’s create a few versions of your new contract. You can do so by executing r
 The “Runner” is used to execute multiple requests automatically and in sequence. To use it click “Runner” in the upper left corner of the screen then select the collection you want and mark the correct requests.
 After that click “Run Managing Contracts” and you have three new versions of your contract.
 
-![runRunner](../images/introduction/runRunner.gif)
+![runRunner](../images/api-tutorial/runRunner.gif)
 
 Now that you have 3 minor version updates let’s add a major one as well. For that use the eighth request which is very similar to the previous three with the exception of the “majorVersion” parameter in the URL and “Params” tab.
 
-![majorVersionParam](../images/introduction/majorVersionParam.png)
+![majorVersionParam](../images/api-tutorial/majorVersionParam.png)
 
-![majorVersionResponse](../images/introduction/majorVersionResponse.png)
+![majorVersionResponse](../images/api-tutorial/majorVersionResponse.png)
 
 To have a look at the version history of your contract run the next request to list your versions with information about the name of the file, the version id and the node type among other less important facts, less important for our use case anyway.
 
-![versionList](../images/introduction/versionList.png)
+![versionList](../images/api-tutorial/versionList.png)
 
 You can also get information on specific versions in greater detail adding fields like “properties” and “aspectNames”.
 To get details on version 1.1 run the request “Get Details”!
 
-![getVersionDetails](../images/introduction/getVersionDetails.png)
+![getVersionDetails](../images/api-tutorial/getVersionDetails.png)
 
 If you want to view the content, the last two API’s aren't much use, content can only be accessed for a specific version at a time.
 This is what the next request is for, execute it to see the content of version 1.1.
 
-![getVersionContent](../images/introduction/getVersionContent.png)
+![getVersionContent](../images/api-tutorial/getVersionContent.png)
 
 And lastly you can revert to any previous version by sending a post request to the nodes/{contractId}/versions/{versionId}/revert API as is demonstrated in “Revert Version” of the Postman collection.
 Although you are reverting to a previous version, the request will be handled as an update, therefore the version numeration will be continued.
 In the body of this request you can determine whether this should be regarded as a major or minor version update with the boolean property “majorVersion”.
 
-![revertVersion](../images/introduction/revertVersion.png)
+![revertVersion](../images/api-tutorial/revertVersion.png)
 
 
 ## Searching Contracts
@@ -104,9 +104,9 @@ As id, name and node type are already included in the response body of a search 
 Properties on the other hand are not returned by default so we have to tell ACS to send them along with the “include” field.
 It is very important to note that while you are GETting a specific node (or list of nodes if your search parameters are broader) the request you send is of the type POST.
 
-![searchContractRequest](../images/introduction/searchContractRequest.png)
+![searchContractRequest](../images/api-tutorial/searchContractRequest.png)
 
-![searchContractResponse](../images/introduction/searchContractResponse.png)
+![searchContractResponse](../images/api-tutorial/searchContractResponse.png)
 
 
 ## Summary

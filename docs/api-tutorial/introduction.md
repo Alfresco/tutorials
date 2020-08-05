@@ -213,4 +213,4 @@ The second one is more specific and in most cases the better option. If you want
 And lastly, to delete your folder and contract first make sure that your variables are set to the right nodes then send a DELETE request to /nodes/{contractId} and /{folderId} in turn.
 It is also possible to delete the folder directly as this will delete the contract within as well.
 
-If you >! want !< to know more about how to work with API’s and dive in a little deeper, check out Gavin Cornwell's [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) or continue with the second part of this series.
+If you want to know more about how to work with API’s and dive in a little deeper, check out Gavin Cornwell's [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) or continue with the second part of this series.
