@@ -1,12 +1,11 @@
 # Introduction to working with Alfresco API’s
 
-The following tutorial will show you how to utilize Alfresco API’s to interact with ACS using [Postman](https://www.postman.com/downloads/).
- 
-It will take you through the basic steps of:
+This is the first entry in a series of three,which will show you how to utilize Alfresco API’s to interact with ACS using [Postman](https://www.postman.com/downloads/).
+It will serve as a introduction to the terminology as well as cover the most basic operations you can execute with our API's like:
 - Creating a node
 - Uploading content
 - Updating a node
-- And deleting a node in Alfresco ACS.
+- And deleting a node in ACS.
 
   
 ## Prerequisites
@@ -64,16 +63,16 @@ Note that the Postman collection uses the Administrator credentials to execute a
 
 
 ## Creating a contract
-If you finished our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series you will already have created a site called “myInc” and a “Contracts” folder within it.
-Now let’s tell ACS to create another contract inside it.
-To do so you need to give the Alfresco API the appropriate node ID so it knows where the newly created content is supposed to go. 
-To get the ID of the Contracts folder use the first command of the collection.The basic API /nodes/-root-/children (1) will return every child node of your root directory. The “relativePath” parameter (2) will shift that directory to the “Contracts” folder of your site.
-And lastly "includeSource"(3) will list the parent folder, "Contracts", in the response.
+If you finished our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series you will already have created a site called “myInc” and a “Contracts” folder within it.  
+Now let’s tell ACS to create another contract inside it.  
+To do so you need to give the Alfresco API the appropriate node ID so it knows where the newly created content is supposed to go.  
+To get the ID of the Contracts folder use the first command of the collection. The basic API /nodes/-root-/children (1) will return every child node of your root directory. The “relativePath” parameter (2) will shift that directory to the “Contracts” folder of your site.  
+And lastly "includeSource"(3) will list the parent folder, "Contracts", in the response.  
 Actually the "source" part is all we need, as the line in the "Test"(4) tab will grab it's ID and assign it to a global variable called "folderId".
 
-![getIdTest](../images/introduction/getIdTest.png)
-
 ![getFolderIdBody](../images/introduction/getFolderIdBody.png)
+
+![getIdTest](../images/introduction/getIdTest.png)
 
 For the sake of brevity the entry- segment, which contains the children of the "Contracts" folder, is collapsed here.
 The important part of the respnose is the source aka the parent folder(5):
@@ -91,11 +90,17 @@ If not you can check whether the collection indeed uses admin/admin by clicking 
 
 ![checkAuth](../images/introduction/checkAuth.gif)
 
-After retrieving and saving the ID of the Contracts- folder you can now create a new Contract within it.
+Should Postman be correctly configured try and change your password to admin in Share.
+
+![changePassword](../images/api-tutorial/changePassword.gif)
+
+Note that in the example below the password isn't changed, both old and new are "admin".
+
+After retrieving and saving the ID of the Contracts- folder you can now create a new Contract within it.  
 For that use the second request of the collection.
-Here Postman will send a POST(1) request to the /nodes API using the id variable(2) you created in the last request. In the request body(3) there will only be a name and the type you want your file to have (ct:contract)(4). Note that the body is written in JSON(5).
-If you wanted to create a more generic document you could use cm:content or cm:folder to create a folder.
-In the test section we will again create a variable for the contract, so we can use it in the next chapters.
+Here Postman will send a POST(1) request to the /nodes API using the folderId variable(2) you created in the last request. In the request body(3) there will only be a name and the type you want your file to have (ct:contract)(4). Note that the body is written in JSON(5).  
+If you wanted to create a more generic document you could use cm:content as th type or cm:folder to create a folder.  
+In the test section we will again create a variable for the contractId, so we can use it in the next chapters.
 
 ![createContractBody](../images/introduction/createContractBody.png)
 
@@ -111,18 +116,18 @@ If you try to use a non existing prefix you will also get a 400 error code, this
 
 ![invalidPrefix](../images/introduction/invalidPrefix.png)
 
-If you already have a contract you want to upload you can use the same API, only this time instead of sending a json body you will attach the existing contract to your request by using the “form-data” body(1) (Request 3).
+If you already have a contract you want to upload you can use the same API, only this time instead of sending a json body you will attach the existing contract to your request by using the “form-data” body(1) (Request 3).  
 Select the file you want to upload as value for the “filedata”- key(2).
 
 ![uploadContract](../images/introduction/uploadContract.png)
 
-Now let’s check if everything worked as it should have! Log into Share as Administrator and and visit your site “myInc” then navigate to the “New” folder (Document Library -> Contracts -> New).
+Now let’s check if everything worked as it should have! Log into Share as Administrator and and visit your site “myInc” then navigate to the “New” folder (Document Library -> Contracts -> New).  
 If everything has gone to plan there should be the contract you just created or uploaded.
 
 ![newContract](../images/introduction/newContract.png)
 
-If you want to view your contract at any point use the fourth request which will return the node belonging to the ID the {contractId} is currently assigned to.
-The response body will look exactly as the one above with the notable difference that you didn't first create the contract but merely called for an existing one.
+If you want to view your contract at any point use the fourth request which will return the node belonging to the ID the {contractId} variable is currently assigned to.  
+The response body will look exactly like the one for creating a contract with the notable difference that it contains an already existing one instead of the node you just created.
 
 
 ## Update a contract
