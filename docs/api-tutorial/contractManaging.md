@@ -1,19 +1,19 @@
 # Managing your contracts with API’s
 
-API’s will help you simplify certain repeatable workflows within your application and streamline your code as much as possible.
-To ensure your work with ACS is as comfortable as can be Alfresco provides a number of REST API’s which you can look up [here](https://api-explorer.alfresco.com/api-explorer/#/).
+API’s will help you simplify certain repeatable workflows within your application thereby streamlining your code as much as possible.
+To ensure your work with ACS is as comfortable as possible Alfresco provides a number of REST API’s which you can look up [here](https://api-explorer.alfresco.com/api-explorer/#/).
 
-This tutorial will guide you through the more specific API’s of Alfresco:
+This tutorial will guide you through the more specific REST API’s of Alfresco:
 - Listing and executing actions
-- Versioning your nodes
+- Versioning of your nodes
 - Searching for nodes
 
 
 ## Prerequisites
 
-In order to continue you should have completed our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series as well as the first two entries in this one:
-- Introduction to Alfresco API’s
-- Advanced operations
+In order to continue, you should have completed our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series as well as the first two entries in this one:
+- [Working with Alfresco API’s](introduction.md)
+- [Advanced operations](advancedOperations.md)
 
 [Postman](https://www.postman.com/downloads/) is also a requirement for you to be able to continue.
 
@@ -23,27 +23,27 @@ To have an easier time following this tutorial import this collection of request
 
 
 ## Listing and executing actions
-In the Contract Management series you already used actions to structure your site and move files into the appropriate folders according to their status.
+In the Contract Management series you've already used actions to structure your site and move files into the appropriate folders according to their status.
 
 Before we continue you will have to create a contract to work with in the following steps.  
 For that run the first two requests of the collection, the first one will get the ID of your `Contracts` folder. After that the second request will create a new contract within it.  
 If you already completed any of the preceeding tutorials of this series you can leave out the first request as your `{folderId}` variable is already set.
 
 Now we will use the Alfresco REST API's to add an aspect to a your contract.  
-You're maybe thinking: "But wait, I already did that in the introduction tutorial by updating my contract." and you would be right, but...  
+You're maybe thinking: "But wait, I already did that in the introduction tutorial by updating my contract with the `/nodes` API." and you would be right, but...  
 If you wanted to add an aspect to a contract using the `/nodes` API you would have to list every aspect already assigned to the node plus the one you want to add.
 Otherwise you would just replace the "old" aspects.  
 It was a valid route for you to take in the introduction as it was the first aspect you added but if you have a look at the contract you just created you'll see that it already has `cm:versionable` assigned to it.  
 More on that aspect later.
 
 Let's have a look at the action you are about to use.  
-To do that you need to send a send GET request to the `/action-definitions/{actionId}` API, coincidentally the third request of the collection does just that.  
+To do so you need to send a send GET request to the `/action-definitions/{actionId}` API, coincidentally the third request of the collection does just that.  
 The Id-ing of actions is much more intuitive compared to files and folders as they are identical to their name only written in all lowercase letters.
 
 ![actionDef](../images/api-tutorial/actionDef.png)
 
-Okay, let’s go through the action bit by bit: The first part is an array telling you which node types the action is applicable on. If the array is empty, as is the case here, you can apply the action to any type.  
-Next we have `parameterDefinitions`, an array, the entries of which are the parameters you have to send if you want to execute this action. "Add-features" has only one - `aspect-name` - the name of the parameter is the string you will use to specify it in the body of your execution request. The entry also tells you which type the parameter has to be of and if it is mandatory to successfully execute the action. 
+Okay, let’s go through the action bit by bit: The first part is an array telling you which node types the action is applicable to. If the array is empty, as is the case here, you can apply the action to any type.  
+Next we have `parameterDefinitions`: The entries of this array tell you which parameters you have to define when you want to execute this action. `Add-features` has only one - `aspect-name` - the name of the parameter is the string you will use to specify it in the body of your execution request. The entry also tells you which type the parameter has to be of and if it is mandatory to successfully execute the action. 
 
 Now it's time to add an aspect to your contract, so go ahead and run `Execute Action`, which will ping the `/action-executions` API with the name of the action, the ID of the concerned contract and the name of the aspect you want to add, in this case `ct:employee`.
 
@@ -60,9 +60,9 @@ This is important for a later step in this tutorial.
 Next up versioning can be very useful if you want to be able to revert to a previous state of a contract, be it because a certain clause was tossed or a party withdrew.
 
 Luckily you've already created a versionable contract in the last step.  
-If you make a contract versionable the property called “auto-version” is automatically turned on, which means that every time you update your contract there will be a minor version update as well, turning the version from i.e. 1.0 to 1.1.
+If you make a contract versionable the property called `auto-version` is automatically turned on, which means that every time you update your contract there will be a minor version update as well, turning the version from i.e. 1.0 to 1.1.
 
-Let’s create a few versions of your new contract. You can do so by executing requests 6 through 8 manually one by one or use the Postman “`Runner`”.
+Let’s create a few versions of your new contract. You can do so by executing requests 6 through 8 manually one by one or use the Postman `Runner`.
 
 The `Runner` is used to execute multiple requests automatically and in sequence. To use it click `Runner` in the upper left corner of the screen then select the collection you want and mark the correct requests.
 After that click `Run Managing Contracts` and you have three new versions of your contract.
@@ -75,7 +75,7 @@ Now that you have 3 minor version updates let’s add a major one as well. For t
 
 ![majorVersionResponse](../images/api-tutorial/majorVersionResponse.png)
 
-To have a look at the version history of your contract run the next request to list your versions with information about the name of the file, the version id and the node type among other less important facts, less important for our use case anyway.
+To have a look at the version history of your contract run the next request to list your versions with information about the name of the file, the version id and the node type among other less important facts, less important for our puposes anyway.
 
 ![versionList](../images/api-tutorial/versionList.png)
 
