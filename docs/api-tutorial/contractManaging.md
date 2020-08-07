@@ -119,3 +119,17 @@ Also you can create and revert versions of your content to reestablish specific 
 
 If you want to do more exercises concerning our REST APIs check out Gavin Cornwells [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-10-things-you-should-know/ba-p/287692) or visit our [documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250).
 
+
+## Next Steps
+
+Now that you know basic practices on how to work with contract you could refresh your memory on some more basic operations with the last two entries in this series:
+
+- [Introduction](introduction.md)
+- [Advanced Operations](advancedOperations.md)
+- **Contract Management**
+
+Also you can check out the [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) by Gavin Cornwell on the Alfresco hub, giving you additional interesting use cases on how to use APIs.   
+Or you could check out the following links to find out more about how APIs work:
+
+- [API guide](https://docs.alfresco.com/6.0/concepts/dev-api-intro.html)
+- [Documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250)

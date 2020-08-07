@@ -195,6 +195,26 @@ If you want to make sure you have the basic skills for working with our API’s 
 After that rename your new contract and make sure it worked by retrieving the node using the `/nodes` API.
 When that succeeds, you can delete both the contract and the folder. If you can do that without peeking at the solution you are well equipped for using our API’s.
 
+You can find the solution to this task at the very end of this guide.
+
+
+## Next Steps
+
+Now that you have a thorough understanding of how basic operations can be executed using the Alfresco APIs, you can check out the next entries in this series and get to know more APIs and how to use them:
+
+- **Introduction**
+- [Advanced Operations](advancedOperations.md)
+- [Contract Management](contractManaging.md)
+
+Also you can check out the [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) by Gavin Cornwell on the Alfresco hub, giving you additional interesting use cases on how to use APIs.   
+Or you could check out the following links to find out more about how APIs work:
+
+- [API guide](https://docs.alfresco.com/6.0/concepts/dev-api-intro.html)
+- [Documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250)
+
+
+## **Solution**
+
 To create a sibling of the “Contracts” folder you have to shift the root directory from the first request one level up so as to get the ID of the “Document Library” folder. Then use the second request and change the type in the body from “ct:contract” to “cm:folder” and the variable set in the “Test” tab from “contractId” to “folderId”.
 Once you have done that use it again with all changes reversed to create a contract inside your new folder.
 Renaming is just another way of saying “updating a property”, this time it’s the “name” property, so use the third request and just replace:
@@ -223,5 +243,3 @@ The second one is more specific and in most cases the better option. If you want
 
 And lastly, to delete your folder and contract first make sure that your variables are set to the right nodes then send a DELETE request to `/nodes/{contractId}` and `/{folderId}` in turn.
 It is also possible to delete the folder directly as this will delete the contract within as well.
-
-If you want to know more about how to work with API’s and dive in a little deeper, check out Gavin Cornwell's [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) or continue with the second part of this series.

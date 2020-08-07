@@ -84,13 +84,11 @@ This is what you should get, when you try to comment now:
 
 ![lockedContract](../images/api-tutorial/lockedContract.png)
 
-Now that you know how to comment try and delete the one you just created by yourself. If you get stuck check out the [Alfresco api-explorer](https://api-explorer.alfresco.com/api-explorer/#/) or read through the spoiler paragraph.  
+Now that you know how to comment try and delete the one you just created by yourself. If you get stuck check out the [Alfresco api-explorer](https://api-explorer.alfresco.com/api-explorer/#/) or read through the solution, you can find at the very end of this tutorial.  
 
 *Note: Create your request inside the collection as it will inherit the needed authorization settings that way. You can do that by hovering over the collection and click the three horizontal dots then select `Add Request`.*
 
 ![addRequest](../images/api-tutorial/addRequest.gif)
-
-Once you created the request change the type to DELETE and copy the URL from the fourth request as it is almost identical to the one you need. The only thing that is missing is the ID of the comment you want to delete. In the `Test` tab of the `Add Comment` request there is a variable being set called `commentId`, use it by adding `/{{commentId}}` to the URL.  
 
 Once you have done that your request is ready to roll, hit `Send` and check Share if your comment was deleted or use the the `List Comments` request again.
 You’ll get an empty `entries` array like so:
@@ -106,3 +104,24 @@ Also you can lock out users from editing your contracts.
 While we were focusing on contracts in these guides, everything you did here is applicable to pretty much any other piece of content as well. 
 
 If you want to do more exercises concerning our API’s check out [Gavin Cornwells blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-10-things-you-should-know/ba-p/287692) or visit our [documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250).
+
+
+## Next Steps
+
+This guide showed you how to perform simple operations on your files.  
+If you want to know how to work *with* them using our APIs, we suggest you check out the next entry in this series or if you want to refresh some more basic skills, read through the introduction again:
+
+- [Introduction](introduction.md)
+- **Advanced Operations**
+- [Contract Management](contractManaging.md)
+
+Also you can check out the [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) by Gavin Cornwell on the Alfresco hub, giving you additional interesting use cases on how to use APIs.  
+Or you could check out the following links to find out more about how APIs work:
+
+- [API guide](https://docs.alfresco.com/6.0/concepts/dev-api-intro.html)
+- [Documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250)
+
+
+## **Solution**
+
+Once you created the request change the type to DELETE and copy the URL from the fourth request as it is almost identical to the one you need. The only thing that is missing is the ID of the comment you want to delete. In the `Test` tab of the `Add Comment` request there is a variable being set called `commentId`, use it by adding `/{{commentId}}` to the URL.
