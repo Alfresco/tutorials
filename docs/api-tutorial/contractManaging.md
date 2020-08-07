@@ -1,9 +1,9 @@
-# Managing your contracts with API’s
+# Managing your contracts with REST APIs
 
-API’s will help you simplify certain repeatable workflows within your application thereby streamlining your code as much as possible.
-To ensure your work with ACS is as comfortable as possible Alfresco provides a number of REST API’s which you can look up [here](https://api-explorer.alfresco.com/api-explorer/#/).
+REST APIs will help you simplify certain repeatable workflows within your application thereby streamlining your code as much as possible.
+To ensure your work with ACS is as comfortable as possible Alfresco provides a number of REST APIs which you can look up [here](https://api-explorer.alfresco.com/api-explorer/#/).
 
-This tutorial will guide you through the more specific REST API’s of Alfresco:
+This tutorial will guide you through the more specific REST APIs of Alfresco:
 - Listing and executing actions
 - Versioning of your nodes
 - Searching for nodes
@@ -12,7 +12,7 @@ This tutorial will guide you through the more specific REST API’s of Alfresco:
 ## Prerequisites
 
 In order to continue, you should have completed our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series as well as the first two entries in this one:
-- [Working with Alfresco API’s](introduction.md)
+- [Working with Alfresco APIs](introduction.md)
 - [Advanced operations](advancedOperations.md)
 
 [Postman](https://www.postman.com/downloads/) is also a requirement for you to be able to continue.
@@ -29,7 +29,7 @@ Before we continue you will have to create a contract to work with in the follow
 For that run the first two requests of the collection, the first one will get the ID of your `Contracts` folder. After that the second request will create a new contract within it.  
 If you already completed any of the preceeding tutorials of this series you can leave out the first request as your `{folderId}` variable is already set.
 
-Now we will use the Alfresco REST API's to add an aspect to a your contract.  
+Now we will use the Alfresco REST APIs to add an aspect to a your contract.  
 You're maybe thinking: "But wait, I already did that in the introduction tutorial by updating my contract with the `/nodes` API." and you would be right, but...  
 If you wanted to add an aspect to a contract using the `/nodes` API you would have to list every aspect already assigned to the node plus the one you want to add.
 Otherwise you would just replace the "old" aspects.  
@@ -43,7 +43,7 @@ The Id-ing of actions is much more intuitive compared to files and folders as th
 ![actionDef](../images/api-tutorial/actionDef.png)
 
 Okay, let’s go through the action bit by bit: The first part is an array telling you which node types the action is applicable to. If the array is empty, as is the case here, you can apply the action to any type.  
-Next we have `parameterDefinitions`: The entries of this array tell you which parameters you have to define when you want to execute this action. `Add-features` has only one - `aspect-name` - the name of the parameter is the string you will use to specify it in the body of your execution request. The entry also tells you which type the parameter has to be of and if it is mandatory to successfully execute the action. 
+Next we have `parameterDefinitions`: The entries of this array tell you which parameters you have to define when you want to execute this action. `add-features` has only one - `aspect-name` - the name of the parameter is the string you will use to specify it in the body of your execution request. The entry also tells you which type the parameter has to be of and if it is mandatory to successfully execute the action. 
 
 Now it's time to add an aspect to your contract, so go ahead and run `Execute Action`, which will ping the `/action-executions` API with the name of the action, the ID of the concerned contract and the name of the aspect you want to add, in this case `ct:employee`.
 
@@ -84,7 +84,7 @@ To get details on version 1.1 run the request `Get Details`!
 
 ![getVersionDetails](../images/api-tutorial/getVersionDetails.png)
 
-If you want to view the content, the last two API’s aren't much use, content can only be accessed for a specific version at a time.  
+If you want to view the content, the last two APIs aren't much use, content can only be accessed for a specific version at a time.  
 This is what the next request is for, execute it to see the content of version 1.1.
 
 ![getVersionContent](../images/api-tutorial/getVersionContent.png)
@@ -98,7 +98,7 @@ In the body of this request you can determine whether this should be regarded as
 
 ## Searching Contracts
 
-Lastly let’s take a look at the search API of Alfresco, it has loads of customizable aspects to make the search for content as various as possible, but we will only cover the very basics here. If you want to know more about the search API, click [here](https://api-explorer.alfresco.com/api-explorer/#!/search/search).
+Lastly let’s take a look at the search API of Alfresco, it has loads of customizable aspects to make the search for content as various as possible, but we will only cover the very basics here. [You can learn more about the search API here](https://api-explorer.alfresco.com/api-explorer/#!/search/search).
 
 The `Search for Employee Contract` request will return the contract you created earlier as it looks for every node having the type `ct:contract` and narrowing it further down to the name of the employee it concerns.  
 Also it will cut certain fields from the response body so that only the ID, name and node type of the contract are left as well as its properties.  
@@ -113,9 +113,9 @@ It is very important to note that while you are GETting a specific node (or list
 
 ## Summary
 
-After this tutorial you are able to perform any action on any node on your system using the Alfresco API’s.
+After this tutorial you are able to perform any action on any node on your system using the Alfresco REST APIs.
 
 Also you can create and revert versions of your content to reestablish specific states of your files should the need arise and utilize the Alfresco search API as well as tailor it's response to your needs.
 
-If you want to do more exercises concerning our API’s check out Gavin Cornwells [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-10-things-you-should-know/ba-p/287692) or visit our [documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250).
+If you want to do more exercises concerning our REST APIs check out Gavin Cornwells [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-10-things-you-should-know/ba-p/287692) or visit our [documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250).
 
