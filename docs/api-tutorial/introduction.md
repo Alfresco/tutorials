@@ -22,7 +22,7 @@ So you only need to worry about three things:
 
 Everything else will be taken care of by Postman.
 
-Also you will need this collection of pre-made requests to spare you from creating them yourself. 
+Also you will need this collection of premade requests to spare you from creating them yourself. 
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/run-collection/bfc6b4dd5f3ec21ddb8d)
 
@@ -36,7 +36,7 @@ It takes the request of the client and translates it so the provider knows what 
 
 The way Alfresco API URL’s are built is very straightforward: They all use the same root `http://your-alfresco.url/alfresco/api/-default-/public/alfresco/versions/1/`.
 
-From here on in it works its way down from the top- level, like `nodes`, `people` or `sites`, over the instance- id to the property of the instance you want to edit or view. 
+From here on in it works its way down from the toplevel, like `nodes`, `people` or `sites`, over the instance id to the property of the instance you want to edit or view. 
 
 So if you wanted to GET every child of a folder, you’d call: `/nodes/{folderId}/children`
 
