@@ -98,7 +98,10 @@ In the body of this request you can determine whether this should be regarded as
 
 ## Searching Contracts
 
-Lastly let’s take a look at the search API of Alfresco, it has loads of customizable aspects to make the search for content as various as possible, but we will only cover the very basics here. [You can learn more about the search API here](https://api-explorer.alfresco.com/api-explorer/#!/search/search).
+Lastly let’s take a look at the search API of Alfresco.  
+This API gives you access to the Alfresco search engine, letting you customize almost every aspect of your query as well as tailor the response body to your needs as will be demonstrated below.
+You can learn more about the search API and explore different fields to make your request as specific as possible [here](https://api-explorer.alfresco.com/api-explorer/#!/search/search).  
+We encourage you to take a look at the possibilities the search API offers and construct your own custom request and expiriment with what you can do.
 
 The `Search for Employee Contract` request will return the contract you created earlier as it looks for every node having the type `ct:contract` and narrowing it further down to the name of the employee it concerns.  
 Also it will cut certain fields from the response body so that only the ID, name and node type of the contract are left as well as its properties.  
@@ -131,5 +134,6 @@ Now that you know basic practices on how to work with contract you could refresh
 Also you can check out the [blog series by Gavin Cornwell on the Alfresco hub](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874), giving you additional interesting use cases on how to use APIs.   
 Or you could check out the following links to find out more about how APIs work:
 
+- [API explorer](https://api-explorer.alfresco.com/api-explorer/#/)
 - [API guide](https://docs.alfresco.com/6.0/concepts/dev-api-intro.html)
 - [Documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250)

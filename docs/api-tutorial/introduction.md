@@ -209,6 +209,7 @@ Now that you have a thorough understanding of how basic operations can be execut
 Also you can check out the [blog by Gavin Cornwell on the Alfresco hub](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874), giving you additional interesting use cases on how to use APIs.   
 Or you could check out the following links to find out more about how APIs work:
 
+- [API explorer](https://api-explorer.alfresco.com/api-explorer/#/)
 - [API guide](https://docs.alfresco.com/6.0/concepts/dev-api-intro.html)
 - [Documentation of various resources](https://hub.alfresco.com/t5/alfresco-content-services-hub/alfresco-public-rest-apis/ba-p/291250)
 
