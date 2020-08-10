@@ -115,7 +115,7 @@ If you want to know how to work *with* them using our APIs, we suggest you check
 - **Advanced Operations**
 - [Contract Management](contractManaging.md)
 
-Also you can check out the [blog](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874) by Gavin Cornwell on the Alfresco hub, giving you additional interesting use cases on how to use APIs.  
+Also you can check out the [blog by Gavin Cornwell on the Alfresco hub](https://hub.alfresco.com/t5/alfresco-content-services-blog/v1-rest-api-part-1-introduction/ba-p/286874), giving you additional interesting use cases on how to use APIs.  
 Or you could check out the following links to find out more about how APIs work:
 
 - [API guide](https://docs.alfresco.com/6.0/concepts/dev-api-intro.html)
