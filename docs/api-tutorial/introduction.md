@@ -31,6 +31,7 @@ While this introduction will explain all the parts of these requests, we encoura
 
 
 ## What is a REST API
+
 You can picture a REST API as the middleman between the client software - in this case Postman - and the provider - here ACS.
 It takes the request of the client and translates it so the provider knows what to do, then relays the answer of the provider back to the client.
 
@@ -43,6 +44,7 @@ So if you wanted to GET every child of a folder, you’d call: `/nodes/{folderId
 ACS provides REST APIs for a lot of operations, if you want to get an overview and familiarize yourself with the URL structure click [here](https://api-explorer.alfresco.com/api-explorer/#/).
 
 ## Requests
+
 There are quite a few request types. In this tutorial we will be focusing on four:
 - GET
 - POST
@@ -64,6 +66,7 @@ Note that the Postman collection uses the Administrator credentials to execute a
 
 
 ## Creating a contract
+
 If you finished our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series you will already have created a site called “myInc” and a “Contracts” folder within it.  
 Now let’s tell ACS to create another contract inside it.  
 
@@ -104,7 +107,8 @@ Note that in the example below the password isn't changed, both old and new are 
 After retrieving and saving the ID of the Contracts folder you can now create a new Contract within it.  
 For that use the second request of the collection.  
 
-Here Postman will send a POST(1) request to the `/nodes` API using the `folderId` variable(2) you created in the last request. In the request body(3) there will only be a name and the type you want your file to have `ct:contract`(4). Note that the body is written in JSON(5).
+Here Postman will send a POST(1) request to the `/nodes` API using the `folderId` variable(2) you created in the last request. In the request body(3) there will only be the file you want to upload(4) as well as the type it will have: `ct:contract`(5).  
+Just click `Choose File` and select a document from your system.
 
 If you wanted to create a more generic document you could use `cm:content` as th type or `cm:folder` to create a folder.  
 In the test section we will again create a variable for the contractId, so we can use it in the next chapters.
@@ -123,18 +127,11 @@ If you try to use a non existing prefix you will also get a 400 error code, this
 
 ![invalidPrefix](../images/api-tutorial/invalidPrefix.png)
 
-If you already have a contract you want to upload you can use the same API, only this time instead of sending a JSON body you will attach the existing contract to your request by using the `form-data` body(1) (Request 3).    
-Select the file you want to upload as value for the `filedata` key(2).
-
-![uploadContract](../images/api-tutorial/uploadContract.png)
-
 Now let’s check if everything worked as it should have! Log into Share as Administrator and and visit your site “myInc” then navigate to the “New” folder (Document Library -> Contracts -> New).  
 
 If everything has gone to plan there should be the contract you just created or uploaded.
 
-![newContract](../images/api-tutorial/newContract.png)
-
-If you want to view your contract at any point use the fourth request which will return the node belonging to the `{contractId}` variable.  
+If you want to view your contract at any point use the third request which will return the node belonging to the `{contractId}` variable.  
 The response body will look exactly like the one for creating a contract with the notable difference that it contains an already existing one instead of the node you just created.
 
 
