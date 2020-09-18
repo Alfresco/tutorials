@@ -81,7 +81,7 @@ Lastly, we will go through the `Controller` class with the `main()` method.
 It serves as the interface between user and application, taking the commands and passing them down to the `Logic` class.
 
 *Sidenote: The `APIsInterface` is a collection of API parts that will be used as a shortcut for assembling the suffixes passed on to the request methods (more on that later).  
-As this interface isn’t crucial to the functionality of this application, it is not listed above, but it is a nice-to-have. You can get it below.*
+As this interface isn’t crucial to the functionality of this application, it is not listed above, but it is a nice-to-have. You can get it below:
 
 ```
 package org.alfresco.example.api;
@@ -645,7 +645,7 @@ public String changeAuthorization(String acsUser, String acsPassword) throws Int
 ```
 
 The second is a very crucial method: `executeGet()`, because almost every other operation you are going to implement needs to call it to get a `targetNode`, for example, a hypothetical rename- feature would need to know which node to rename.  
-`ExecuteGet()` will create an instance of `Get` and execute it.
+`ExecuteGet()` will create an instance of `Get` then execute and return it.
 
 ```
 public OperationInterface executeGet(String searchTerm) throws JSONException, InterruptedException, IOException {
@@ -789,6 +789,8 @@ case "auth":
 The next case (*get*) also checks the `command`’s length and assigns the second entry in the `commandPart` array to a String called `searchTerm`.  
 Then it calls the `executeGet()` method and prints the `answer` of the returned instance.
 
+If the length doesn't match it prints an error message.
+
 ```
 //returns every node related to searchTerm
 case "get":
@@ -796,6 +798,10 @@ case "get":
         String targetNodeName = commandParts[1];
 
         System.out.println(logic.executeGet(targetNodeName).getAnswer());
+    }
+    else {
+
+        System.out.println("Invalid length of command!");
     }
 
     break;
