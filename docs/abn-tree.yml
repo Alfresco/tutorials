@@ -6,3 +6,9 @@
         - setting-up-permissions.md: "Setting up permissions"
         - smart-folders.md: "Smart Folders"
         - connect-to-app.md: "Mobile application"
+- api-tutorial:
+    title: "REST APIs"
+    children:
+        - introduction.md: "Introduction"
+        - contractManaging.md: "Managing Contracts"
+        - advancedOperations.md: "Advanced Operations"
