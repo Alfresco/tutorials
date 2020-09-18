@@ -12,3 +12,8 @@
         - introduction.md: "Introduction"
         - contractManaging.md: "Managing Contracts"
         - advancedOperations.md: "Advanced Operations"
+        - api-app:
+            title: "API Application"
+            children:
+                - stage-one.md: "Introduction"
+                - stage-two.md: "Advanced"
