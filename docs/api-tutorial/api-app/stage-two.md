@@ -1,11 +1,10 @@
-# Expanding your application
+# Consuming Alfresco Content Services REST API from Java Part 2
 
-This tutorial will show you how to expand your base application by adding new useful features.
-
+This tutorial builds on [part one](stage-one.md) and will expand the base application by adding new useful features.
 
 ## Prerequisites
 
-To continue, you need to complete the [API- Application (not yet linked)]() tutorial first as this guide will build on the accomplishments you made.
+To continue, you need to complete [part one of thetutorials](stage-one.md) first as this guide will build on the accomplishments you made.
 
 ## What’s the plan
 

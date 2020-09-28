@@ -1,6 +1,6 @@
 # Guide through advanced operations using Alfresco REST APIs
 
-REST APIs are a great way of automating repetitive tasks like uploading content and if used correctly make your application more efficient and less prone to errors.
+This tutorial is a continuation of [Working with Alfresco REST APIs](introduction.md), if you are unfamiliar with the Alfresco REST APIs make sure to check it out. 
 
 
 ## Prerequisites
@@ -9,9 +9,7 @@ In order to continue you will need [Postman](https://www.postman.com/downloads/)
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/run-collection/9accb86d21e8ab18e43e)
 
-This tutorial is a continuation of [Working with Alfresco REST APIs](introduction.md), if you are unfamiliar with the Alfresco REST APIs make sure to check it out. 
-
-If you are already familiar with the basics, the completion of the first tutorial is not strictly necessary. However, certain requests of this collection will not be explained in detail as they were already discussed in the previous guide.
+If you are already familiar with the basics, the completion of the [first tutorial](introduction.md) is not strictly necessary. However, certain requests of this collection will not be explained in detail as they were already discussed in the previous guide.
 
 The completion of the [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series on the other hand is a requirement for you to continue.
 

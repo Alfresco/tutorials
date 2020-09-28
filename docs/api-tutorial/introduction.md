@@ -1,12 +1,14 @@
 # Working with Alfresco REST APIs
 
-This is the first entry in a series of three,which will show you how to utilize Alfresco Content Services (ACS) REST APIs to interact with ACS using [Postman](https://www.postman.com/downloads/).
+This is the first entry in a series of three, which will show you how to utilize Alfresco Content Services (ACS) REST APIs to interact with ACS using [Postman](https://www.postman.com/downloads/).
 
-It will serve as a introduction to the terminology as well as cover the most basic operations you can execute with our API's like:
+It will serve as an introduction to the terminology as well as cover the most basic operations you can execute with our API's like:
 - Creating a node
 - Uploading content
 - Updating a node
 - And deleting a node in ACS.
+
+To ensure your work with ACS is as comfortable as possible Alfresco provides a number of REST APIs which you can look up [here](https://api-explorer.alfresco.com/api-explorer/#/).
 
   
 ## Prerequisites

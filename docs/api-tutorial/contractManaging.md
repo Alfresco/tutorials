@@ -1,13 +1,11 @@
 # Managing your contracts with REST APIs
 
-REST APIs will help you simplify certain repeatable workflows within your application thereby streamlining your code as much as possible.
-To ensure your work with ACS is as comfortable as possible Alfresco provides a number of REST APIs which you can look up [here](https://api-explorer.alfresco.com/api-explorer/#/).
+This tutorial is a continuation of [advanced operations using Alfresco REST APIs](advancedOperations.md), if you are unfamiliar with the Alfresco REST APIs make sure to check it out. 
 
 This tutorial will guide you through the more specific REST APIs of Alfresco:
 - Listing and executing actions
 - Versioning of your nodes
 - Searching for nodes
-
 
 ## Prerequisites
 

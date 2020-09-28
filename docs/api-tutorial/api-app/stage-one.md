@@ -1,6 +1,6 @@
-# Api- Application
+# Consuming Alfresco Content Services REST API from Java Part 1
 
-APIs are a great way of communicating with ACS from the outside and are thus perfect for custom applications.
+REST APIs are a great way of integrating systems are thus perfect for custom applications. This tutorial builds on the [Contract Management](../../contract-management/README.md) and shows how you can create a custom Java application that integrates with Alfresco Content Services. 
 
 
 ## What to expect
@@ -17,14 +17,11 @@ More features will follow in additional entries of this series.
 
 ## Prerequisites
 
-Our [Contract Management](https://www.alfresco.com/abn/tutorials/contract-management/) series is vital for this tutorial as the demo application relies on sites,folder structures and content models created in these guides, so please make sure to check them out.
+Our [Contract Management](../../contract-management/README.md) series is vital for this tutorial as the demo application relies on sites,folder structures and content models created in these guides, so please make sure to check them out.
 
-If you want to skip the series and only create the site and folders needed for this guide just complete these sections:
+If you want to skip the series and only create the site and folders needed for this guide just complete the [Create a content model tutorial](../../contract-management/content-model.md)
 
-- [Create a content model](https://www.alfresco.com/abn/tutorials/contract-management/content-model/#creating-your-first-content-model)
-- [Create site and folder structure (not yet linked)]()
-
-We recommend going through our [API- Tutorial (not yet linked)]() series, as it will show you the basic functions of ACS and how to leverage them using APIs.
+We recommend going through our [API Introduction](../introduction.md) series, as it will show you the basic functions of ACS and how to leverage them using APIs.
 Also, they illustrate how to call an API and what a request should look like.
 
 Let’s setup a basic Spring Boot application which will serve as the foundation for our application. Go to https://start.spring.io/ and replicate the following screenshot, then hit “Generate”.
