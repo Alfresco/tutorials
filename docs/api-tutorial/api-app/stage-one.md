@@ -26,12 +26,12 @@ Also, they illustrate how to call an API and what a request should look like.
 
 Let’s setup a basic Spring Boot application which will serve as the foundation for our application. Go to https://start.spring.io/ and replicate the following screenshot, then hit “Generate”.
 
-![springInitializer](../images/api-app/springInitializer.png)
+![springInitializer](../../images/api-app/springInitializer.png)
 
 After you’ve done so, extract the folder you just downloaded and move it to a location of your choosing.  
 Now open your IDE (we recommend [Visual Studio Code](https://code.visualstudio.com/)) and click *File* -> *Open Folder* and select the folder you moved.
 
-![buildBaseProject](../images/api-app/buildBaseProject.gif)
+![buildBaseProject](../../images/api-app/buildBaseProject.gif)
 
 *Note: This gif merely illustrates the basic steps you have to take. We do not recommend storing your application in your Downloads folder.*
 
@@ -41,7 +41,7 @@ Before we come to those, though, let’s rename the `ApiApplictaion` class to `C
 
 Now let `Controller` implement the `ApplicationRunner` interface and remove the content of the `main()` method to replace it later on with our code.
 
-![refactorController](../images/api-app/refactorController.gif)
+![refactorController](../../images/api-app/refactorController.gif)
 
 Next, copy the following dependency into your pom file:
 
